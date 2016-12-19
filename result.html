@@ -87,6 +87,9 @@
         state = decodeURI(params["state"]);
         replacedState = state.split('+').join(' ');
 
+        zipcode = decodeURI(params["zipCode"]);
+        replacedZipCode = zipcode.replace(/%2D/g,"-");
+
         comment = decodeURI(params["comment"]);
         replacedComment = comment.split('+').join(' ');
         replacedComment = replacedComment.replace(/%2C/g, ",");
@@ -179,6 +182,12 @@
         </div>
 
         <!-- zip code -->
+        <div class="row">
+            <label class="col-xs-3 control-label">Zip Code</label>
+            <label class="col-xs-4 control-label">
+                <script LANGUAGE="JavaScript">document.write(replacedZipCode);</script>
+            </label>
+        </div>
 
     </div>
 
