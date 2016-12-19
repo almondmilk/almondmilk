@@ -84,6 +84,9 @@
         replacedCity = replacedCity.replace(/%2C/g,"'");
         replacedCity = replacedCity.replace(/%2B/g," ");
 
+        state = decodeURI(params["state"]);
+        replacedState = state.split('+').join(' ');
+
         comment = decodeURI(params["comment"]);
         replacedComment = comment.split('+').join(' ');
         replacedComment = replacedComment.replace(/%2C/g, ",");
@@ -159,13 +162,23 @@
             </label>
         </div>
 
-        <!-- street -->
+        <!-- city -->
         <div class="row">
             <label class="col-xs-3 control-label">City</label>
             <label class="col-xs-4 control-label">
                 <script LANGUAGE="JavaScript">document.write(replacedCity);</script>
             </label>
         </div>
+
+        <!-- state -->
+        <div class="row">
+            <label class="col-xs-3 control-label">State</label>
+            <label class="col-xs-4 control-label">
+                <script LANGUAGE="JavaScript">document.write(replacedState);</script>
+            </label>
+        </div>
+
+        <!-- zip code -->
 
     </div>
 
