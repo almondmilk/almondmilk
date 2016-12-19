@@ -44,8 +44,8 @@
                         <h2 style='text-align: center;'>Please record the problem by filing the form below</h2>
                     </div>
 
-                    <form id="defaultForm" method="GET" class="form-horizontal" action="target.php">
-
+                    <!--<form id="defaultForm" method="GET" class="form-horizontal" action="target.php">-->
+                    <form id="defaultForm" method="get" class="form-horizontal" action="result.html">
                         <div class="page-header">
                             <h4 style='text-align: left;'>Personal Information</h4>
                         </div>
@@ -67,17 +67,17 @@
                             <div class="col-lg-5">
                                 <div class="radio">
                                     <label>
-                                        <input type="radio" name="gender" value="male" /> Male
+                                        <input type="radio" name="gender" value="Male" /> Male
                                     </label>
                                 </div>
                                 <div class="radio">
                                     <label>
-                                        <input type="radio" name="gender" value="female" /> Female
+                                        <input type="radio" name="gender" value="Female" /> Female
                                     </label>
                                 </div>
                                 <div class="radio">
                                     <label>
-                                        <input type="radio" name="gender" value="other" /> Other
+                                        <input type="radio" name="gender" value="Other" /> Other
                                     </label>
                                 </div>
                             </div>
@@ -89,10 +89,10 @@
                             <div class="col-lg-5">
                                 <select class="form-control" name="education">
                                     <option value=""></option>
-                                    <option value="hs">High School Diploma</option>
-                                    <option value="bs">Bachelor's Degree</option>
-                                    <option value="ms">Master's Degree</option>
-                                    <option value="phd">PhD Degree</option>
+                                    <option value="High School Diploma">High School Diploma</option>
+                                    <option value="Bachelor's Degree">Bachelor's Degree</option>
+                                    <option value="Master's Degree">Master's Degree</option>
+                                    <option value="PhD Degree">PhD Degree</option>
                                 </select>
                             </div>
                         </div>
@@ -215,9 +215,9 @@
                         </div>
 
                         <div class="form-group">
-                            <label class="col-lg-3 control-label">Description</label>
+                            <label class="col-lg-3 control-label">Comment</label>
                             <div class="col-lg-5">
-                                <textarea class="form-control" name="bio" placeholder="200 characters max." rows="10" data-bv-stringlength data-bv-stringlength-max="200" data-bv-stringlength-message="The bio must be less than 200 characters long"></textarea>
+                                <textarea class="form-control" name="comment" placeholder="200 characters max." rows="10" data-bv-stringlength data-bv-stringlength-max="200" data-bv-stringlength-message="The comment must be less than 200 characters long"></textarea>
                             </div>
                         </div>
 
@@ -348,7 +348,7 @@
                         <!-- buttons -->
                         <div class="form-group">
                             <div class="col-lg-9 col-lg-offset-3">
-                                <button type="submit" class="btn btn-primary" name="submit" value="submit">Submit</button>
+                                <button type="submit" class="btn btn-primary" value="Submit">Submit</button>
                                 <button type="button" class="btn btn-info" id="validateBtn">Manual validate</button>
                                 <button type="button" class="btn btn-info" id="resetBtn">Reset form</button>
                             </div>
