@@ -53,47 +53,50 @@
         params = getParams();
 
         var firstname = decodeURI(params["firstName"]);
-        lastname = decodeURI(params["lastName"]);
-        gender = decodeURI(params["gender"]);
+        var lastname = decodeURI(params["lastName"]);
+        var gender = decodeURI(params["gender"]);
 
         var replacedFirstName = firstname.replace(/%2D/g, "-");
         var replacedFirstName = replacedFirstName.replace(/%2C/g, "'");
         var replacedFirstName = replacedFirstName.split('+').join(' ');
 
-        replacedLastName = lastname.replace(/%2D/g, "-");
-        replacedLastName = replacedLastName.replace(/%2C/g, "'");
-        replacedLastName = replacedLastName.split('+').join(' ');
+        var replacedLastName = lastname.replace(/%2D/g, "-");
+        var replacedLastName = replacedLastName.replace(/%2C/g, "'");
+        var replacedLastName = replacedLastName.split('+').join(' ');
 
-        education = decodeURI(params["education"]);
-        replacedEducation = education.split('+').join(' ');
+        var education = decodeURI(params["education"]);
+        var replacedEducation = education.split('+').join(' ');
 
-        email = decodeURI(params["email"]);
-        replacedEmail = email.split('%40').join('@');
+        var email = decodeURI(params["email"]);
+        var replacedEmail = email.split('%40').join('@');
 
-        date = decodeURI(params["date"]);
-        replacedDate = date.replace(/%2F/g, "/");
+        var date = decodeURI(params["date"]);
+        var replacedDate = date.replace(/%2F/g, "/");
 
-        street = decodeURI(params["street"]);
-        replacedStreet = street.split('+').join(' ');
-        replacedStreet = replacedStreet.replace(/%2D/g,"-");
-        replacedStreet = replacedStreet.replace(/%2C/g,"'");
-        replacedStreet = replacedStreet.replace(/%2B/g," ");
+        var street = decodeURI(params["street"]);
+        var replacedStreet = street.split('+').join(' ');
+        var replacedStreet = replacedStreet.replace(/%2D/g,"-");
+        var replacedStreet = replacedStreet.replace(/%2C/g,"'");
+        var replacedStreet = replacedStreet.replace(/%2B/g," ");
 
-        city = decodeURI(params["city"]);
-        replacedCity = city.split('+').join(' ');
-        replacedCity = replacedCity.replace(/%2D/g,"-");
-        replacedCity = replacedCity.replace(/%2C/g,"'");
-        replacedCity = replacedCity.replace(/%2B/g," ");
+        var city = decodeURI(params["city"]);
+        var replacedCity = city.split('+').join(' ');
+        var replacedCity = replacedCity.replace(/%2D/g,"-");
+        var replacedCity = replacedCity.replace(/%2C/g,"'");
+        var replacedCity = replacedCity.replace(/%2B/g," ");
 
-        state = decodeURI(params["state"]);
-        replacedState = state.split('+').join(' ');
+        var state = decodeURI(params["state"]);
+        var replacedState = state.split('+').join(' ');
 
-        zipcode = decodeURI(params["zipCode"]);
-        replacedZipCode = zipcode.replace(/%2D/g,"-");
+        var zipcode = decodeURI(params["zipCode"]);
+        var replacedZipCode = zipcode.replace(/%2D/g,"-");
 
-        comment = decodeURI(params["comment"]);
-        replacedComment = comment.split('+').join(' ');
-        replacedComment = replacedComment.replace(/%2C/g, ",");
+        var category = decodeURI(params["category"]);
+        var replacedCategory = category..split('+').join(' ');
+
+        var comment = decodeURI(params["comment"]);
+        var replacedComment = comment.split('+').join(' ');
+        var replacedComment = replacedComment.replace(/%2C/g, ",");
     </script>
 
     <div class="col-xs-8 col-xs-offset-2">
@@ -187,6 +190,14 @@
             <label class="col-xs-3 control-label">Zip Code</label>
             <label class="col-xs-4 control-label">
                 <script LANGUAGE="JavaScript">document.write(replacedZipCode);</script>
+            </label>
+        </div>
+
+        <!-- category -->
+        <div class="row">
+            <label class="col-xs-3 control-label">Category</label>
+            <label class="col-xs-4 control-label">
+                <script LANGUAGE="JavaScript">document.write(replacedCategory);</script>
             </label>
         </div>
 
