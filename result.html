@@ -51,12 +51,13 @@
 
         params = getParams();
 
-        firstname = decodeURI(params["firstName"]);
+        var firstname = decodeURI(params["firstName"]);
         lastname = decodeURI(params["lastName"]);
         gender = decodeURI(params["gender"]);
-        replacedFirstName = firstname.replace(/%2D/g, "-");
-        replacedFirstName = replacedFirstName.replace(/%2C/g, "'");
-        replacedFirstName = replacedFirstName.split('+').join(' ');
+
+        var replacedFirstName = firstname.replace(/%2D/g, "-");
+        var replacedFirstName = replacedFirstName.replace(/%2C/g, "'");
+        var replacedFirstName = replacedFirstName.split('+').join(' ');
 
         replacedLastName = lastname.replace(/%2D/g, "-");
         replacedLastName = replacedLastName.replace(/%2C/g, "'");
@@ -78,7 +79,7 @@
         replacedStreet = replacedStreet.replace(/%2B/g," ");
 
         city = decodeURI(params["city"]);
-        replacedCity = city..split('+').join(' ');
+        replacedCity = city.split('+').join(' ');
         replacedCity = replacedCity.replace(/%2D/g,"-");
         replacedCity = replacedCity.replace(/%2C/g,"'");
         replacedCity = replacedCity.replace(/%2B/g," ");
