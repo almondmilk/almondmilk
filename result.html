@@ -53,16 +53,16 @@
         params = getParams();
 
         var firstname = decodeURI(params["firstName"]);
-        var lastname = decodeURI(params["lastName"]);
-        var gender = decodeURI(params["gender"]);
-
         var replacedFirstName = firstname.replace(/%2D/g, "-");
         var replacedFirstName = replacedFirstName.replace(/%2C/g, "'");
         var replacedFirstName = replacedFirstName.split('+').join(' ');
 
+        var lastname = decodeURI(params["lastName"]);
         var replacedLastName = lastname.replace(/%2D/g, "-");
         var replacedLastName = replacedLastName.replace(/%2C/g, "'");
         var replacedLastName = replacedLastName.split('+').join(' ');
+
+        var gender = decodeURI(params["gender"]);
 
         var education = decodeURI(params["education"]);
         var replacedEducation = education.split('+').join(' ');
@@ -97,6 +97,9 @@
         var comment = decodeURI(params["comment"]);
         var replacedComment = comment.split('+').join(' ');
         var replacedComment = replacedComment.replace(/%2C/g, ",");
+
+        var terms = decodeURI(params["terms"]);
+        var replacedTerms = terms.replace("on","Accepted");
     </script>
 
     <div class="col-xs-8 col-xs-offset-2">
@@ -201,6 +204,21 @@
             </label>
         </div>
 
+        <!-- comment -->
+        <div class="row">
+            <label class="col-xs-3 control-label">Comennt</label>
+            <label class="col-xs-4 control-label">
+                <script LANGUAGE="JavaScript">document.write(replacedComment);</script>
+            </label>
+        </div>
+
+        <!-- terms -->
+        <div class="row">
+            <label class="col-xs-3 control-label">Terms</label>
+            <label class="col-xs-4 control-label">
+                <script LANGUAGE="JavaScript">document.write(replacedTerms);</script>
+            </label>
+        </div>
     </div>
 
     <!--
