@@ -1,0 +1,187 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SFSU CS Department - CSC 642 Fall 2016 project: Form UI Alvin Lu alvinlu@mail.sfsu.edu</title>
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="../dist/css/bootstrapValidator.css" />
+
+    <!-- Include the FontAwesome CSS if you want to use feedback icons provided by FontAwesome -->
+    <!--<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />-->
+    <link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../vendor/jquery/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../dist/js/bootstrapValidator.js"></script>
+
+    <style>
+        article,
+        aside,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+    <script LANGUAGE="JavaScript">
+
+        function getParams() {
+            var idx = document.URL.indexOf('?');
+            var params = new Array();
+            if (idx != -1) {
+                var pairs = document.URL.substring(idx + 1, document.URL.length).split('&');
+                for (var i = 0; i < pairs.length; i++) {
+                    nameVal = pairs[i].split('=');
+                    params[nameVal[0]] = nameVal[1];
+                }
+            }
+            return params;
+        }
+
+        params = getParams();
+
+        firstname = decodeURI(params["firstName"]);
+        lastname = decodeURI(params["lastName"]);
+        gender = decodeURI(params["gender"]);
+        replacedFirstName = firstname.replace(/%2D/g, "-");
+        replacedFirstName = replacedFirstName.replace(/%2C/g, "'");
+        replacedFirstName = replacedFirstName.split('+').join(' ');
+
+        replacedLastName = lastname.replace(/%2D/g, "-");
+        replacedLastName = replacedLastName.replace(/%2C/g, "'");
+        replacedLastName = replacedLastName.split('+').join(' ');
+
+        education = decodeURI(params["education"]);
+        replacedEducation = education.split('+').join(' ');
+
+        email = decodeURI(params["email"]);
+        replacedEmail = email.split('%40').join('@');
+
+        date = decodeURI(params["date"]);
+        replacedDate = date.replace(/%2F/g, "/");
+
+        street = decodeURI(params["street"]);
+        replacedStreet = street.split('+').join(' ');
+        replacedStreet = replacedStreet.replace(/%2D/g,"-");
+        replacedStreet = replacedStreet.replace(/%2C/g,"'");
+        replacedStreet = replacedStreet.replace(/%2B/g," ");
+
+        city = decodeURI(params["city"]);
+        replacedCity = city..split('+').join(' ');
+        replacedCity = replacedCity.replace(/%2D/g,"-");
+        replacedCity = replacedCity.replace(/%2C/g,"'");
+        replacedCity = replacedCity.replace(/%2B/g," ");
+
+        comment = decodeURI(params["comment"]);
+        replacedComment = comment.split('+').join(' ');
+        replacedComment = replacedComment.replace(/%2C/g, ",");
+    </script>
+
+    <div class="col-xs-8 col-xs-offset-2">
+
+        <div class="page-header">
+            <h2 style='text-align: center;'>Form Results</h2>
+        </div>
+
+        <div class="page-header">
+            <h4 style='text-align: left;'>Personal Information</h4>
+        </div>
+
+        <!-- first name -->
+        <div class="row">
+            <label class="col-xs-3 control-label">First Name</label>
+            <label class="col-xs-4 control-label">
+                <script LANGUAGE="JavaScript">document.write(replacedFirstName);</script>
+            </label>
+        </div>
+
+        <!--  last name -->
+        <div class="row">
+            <label class="col-xs-3 control-label">Last Name</label>
+            <label class="col-xs-4 control-label">
+                <script LANGUAGE="JavaScript">document.write(replacedLastName);</script>
+            </label>
+        </div>
+
+        <!-- gender -->
+        <div class="row">
+            <label class="col-xs-3 control-label">Gender</label>
+            <label class="col-xs-4 control-label">
+                <script LANGUAGE="JavaScript">document.write(gender);</script>
+            </label>
+        </div>
+
+        <!-- education -->
+        <div class="row">
+            <label class="col-xs-3 control-label">Highest Education</label>
+            <label class="col-xs-4 control-label">
+                <script LANGUAGE="JavaScript">document.write(replacedEducation);</script>
+            </label>
+        </div>
+
+        <!-- email -->
+        <div class="row">
+            <label class="col-xs-3 control-label">Email Address</label>
+            <label class="col-xs-4 control-label">
+                <script LANGUAGE="JavaScript">document.write(replacedEmail);</script>
+            </label>
+        </div>
+
+        <!-- date -->
+        <div class="row">
+            <label class="col-xs-3 control-label">Date</label>
+            <label class="col-xs-4 control-label">
+                <script LANGUAGE="JavaScript">document.write(replacedDate);</script>
+            </label>
+        </div>
+
+        <div class="page-header">
+            <h4 style='text-align: left;'>Location</h4>
+        </div>
+
+        <!--  street -->
+        <div class="row">
+            <label class="col-xs-3 control-label">Street</label>
+            <label class="col-xs-4 control-label">
+                <script LANGUAGE="JavaScript">document.write(replacedStreet);</script>
+            </label>
+        </div>
+
+        <!-- street -->
+        <div class="row">
+            <label class="col-xs-3 control-label">City</label>
+            <label class="col-xs-4 control-label">
+                <script LANGUAGE="JavaScript">document.write(replacedCity);</script>
+            </label>
+        </div>
+
+    </div>
+
+    <!--
+    <script LANGUAGE="JavaScript">
+        document.write("First Name = " + firstname + "<br>");
+        document.write("Last Name = " + lastname + "<br>");
+        document.write("Gender = " + gender + "<br>");
+        document.write("Education = " + replacedEducation + "<br>");
+        document.write("Email = " + replacedEmail + "<br>");
+        document.write("Date = " + replacedDate + "<br>");
+
+
+
+        document.write("Comment = " + replacedComment + "<br>");
+    </script>
+  -->
+</body>
+
+</html>
