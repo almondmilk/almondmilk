@@ -92,7 +92,7 @@
         var replacedZipCode = zipcode.replace(/%2D/g,"-");
 
         var category = decodeURI(params["category"]);
-        var replacedCategory = category..split('+').join(' ');
+        var replacedCategory = category.split('+').join(' ');
 
         var comment = decodeURI(params["comment"]);
         var replacedComment = comment.split('+').join(' ');
