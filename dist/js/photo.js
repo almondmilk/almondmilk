@@ -27,11 +27,11 @@ $("#fileUpload").on('change', function () {
                  if(i == 0){
                    window.sessionStorage.setItem("image0", ($(this)[0].files[i]));
                  }
-                 elseif(i == 1){
+                 if(i == 1){
                   window.sessionStorage.setItem("image1", ($(this)[0].files[i]));
                  }
-                 elseif(i == 2){
-                  window.sessionStorage.setItem("image2", ($(this)[0].files[i])); 
+                 if(i == 2){
+                  window.sessionStorage.setItem("image2", ($(this)[0].files[i]));
                  }
 
              }
