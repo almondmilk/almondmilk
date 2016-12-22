@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <?php session_start(); ?>
     <title>SFSU CS Department - CSC 642 Fall 2016 project: Form UI Alvin Lu alvinlu@mail.sfsu.edu</title>
     <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="/dist/css/bootstrapValidator.css" />
@@ -238,7 +239,7 @@
                             <div id="wrapper" class="col-lg-5">
                                 <input id="fileUpload" type="file" multiple />
                                   <br />
-                                  <div id="image-holder"></div>
+                                  <div id="image-holder" name="imageHolder"></div>
                             </div>
                         </div>
 

@@ -12,7 +12,6 @@ $("#fileUpload").on('change', function () {
          if (typeof (FileReader) != "undefined") {
 
              //loop for each file selected for uploaded.
-             var imageArray = [];
              for (var i = 0; i < countFiles; i++) {
 
                  var reader = new FileReader();
@@ -25,9 +24,18 @@ $("#fileUpload").on('change', function () {
 
                  image_holder.show();
                  reader.readAsDataURL($(this)[0].files[i]);
-                 imageArray[i] = ($(this).[0].files[i]);
+                 if(i == 0){
+                   window.sessionStorage.setItem("image0", ($(this)[0].files[i]));
+                 }
+                 elseif(i == 1){
+                  window.sessionStorage.setItem("image1", ($(this)[0].files[i]));
+                 }
+                 elseif(i == 2){
+                  window.sessionStorage.setItem("image2", ($(this)[0].files[i])); 
+                 }
+
              }
-             window.sessionStorage.setItem("imageArray", imageArray);
+
 
          } else {
              alert("This browser does not support FileReader.");

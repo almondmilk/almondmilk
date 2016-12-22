@@ -2,9 +2,11 @@
 <html>
 
 <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <?php session_start(); ?>
     <title>SFSU CS Department - CSC 642 Fall 2016 project: Form UI Alvin Lu alvinlu@mail.sfsu.edu</title>
     <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="/dist/css/bootstrapValidator.css" />
@@ -104,6 +106,9 @@
 
         var terms = decodeURI(params["terms"]);
         var replacedTerms = terms.replace("on","Accepted");
+
+        var images = decodeURI(params["imageHolder"]);
+
     </script>
 
     <div class="col-xs-8 col-xs-offset-2">
@@ -257,13 +262,19 @@
 
         <!-- image output -->
         <div class="row" id="displayImages">
-            <script>
-                var displayImages = document.getElementById("displayImages");
-                var imageArray[] = sessionStorage.getItem("imageArray");
-                for(var i = 0; i < imageArray.length; i++){
-                  appendTo(displayImages) = "<img src=\"" + imageArray[i] + "\">";
-                }
-            </script>
+          <img id="img0" src="about:blank" alt="Image 0">
+          <img id="img1" src="about:blank" alt="Image 1">
+          <img id="img2" src="about:blank" alt="Image 2">
+            <script type="text/javascript" language="JavaScript">
+              var img0 = window.sessionStorage.getItem("image0");
+              var img1 = window.sessionStorage.getItem("image1");
+              var img2 = window.sessionStorage.getItem("image2");
+
+              img0.setAttribute("src", img0);
+              img1.setAttribute("src", img1);
+              img2.setAttribute("src", img2);
+
+              </script>
         </div>
 
     </div>
