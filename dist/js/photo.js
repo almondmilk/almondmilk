@@ -25,13 +25,13 @@ $("#fileUpload").on('change', function () {
                  image_holder.show();
                  reader.readAsDataURL($(this)[0].files[i]);
                  if(i == 0){
-                   window.sessionStorage.setItem("image0", ($(this)[0].files[i]));
+                   window.localStorage.setItem("image0", ($(this)[0].files[i]));
                  }
                  if(i == 1){
-                  window.sessionStorage.setItem("image1", ($(this)[0].files[i]));
+                  window.localStorage.setItem("image1", ($(this)[0].files[i]));
                  }
                  if(i == 2){
-                  window.sessionStorage.setItem("image2", ($(this)[0].files[i]));
+                  window.localStorage.setItem("image2", ($(this)[0].files[i]));
                  }
 
              }
