@@ -17,6 +17,7 @@
     <script type="text/javascript" src="/vendor/jquery/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="/vendor/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/dist/js/bootstrapValidator.js"></script>
+    <script type="text/javascript" src="/dist/js/photo.js"></script>
 
     <style>
         article,
@@ -246,6 +247,23 @@
             <label class="col-xs-4 control-label">
                 <script LANGUAGE="JavaScript">document.write("Verified");</script>
             </label>
+        </div>
+
+        <!-- google maps -->
+        <div class="row">
+            <label class="col-xs-3 control-label">Google Maps</label>
+        </div>
+
+
+        <!-- image output -->
+        <div class="row" id="displayImages">
+            <script>
+                var displayImages = document.getElementById("displayImages");
+                var imageArray[] = sessionStorage.getItem("imageArray");
+                for(var i = 0; i < imageArray.length; i++){
+                  appendTo(displayImages) = "<img src=\"" + imageArray[i] + "\">";
+                }
+            </script>
         </div>
 
     </div>
