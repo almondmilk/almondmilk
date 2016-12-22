@@ -270,9 +270,13 @@
               var img1 = window.sessionStorage.getItem("image1");
               var img2 = window.sessionStorage.getItem("image2");
 
-              img0.setAttribute("src", img0);
-              img1.setAttribute("src", img1);
-              img2.setAttribute("src", img2);
+              var ih0 = document.getElementById("img0");
+              var ih1 = document.getElementById("img1");
+              var ih2 = document.getElementById("img2");
+
+              ih0.setAttribute("src", img0);
+              ih1.setAttribute("src", img1);
+              ih2.setAttribute("src", img2);
 
               </script>
         </div>
