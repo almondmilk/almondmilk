@@ -67,6 +67,9 @@
         var education = decodeURI(params["education"]);
         var replacedEducation = education.split('+').join(' ');
 
+        var phone = decodeURI(params["phoneNumber"]);
+
+
         var email = decodeURI(params["email"]);
         var replacedEmail = email.split('%40').join('@');
 
@@ -141,6 +144,14 @@
             <label class="col-xs-3 control-label">Highest Education</label>
             <label class="col-xs-4 control-label">
                 <script LANGUAGE="JavaScript">document.write(replacedEducation);</script>
+            </label>
+        </div>
+
+        <!-- phone number -->
+        <div class="row">
+            <label class="col-xs-3 control-label">Phone Number</label>
+            <label class="col-xs-4 control-label">
+                <script LANGUAGE="JavaScript">document.write(phone);</script>
             </label>
         </div>
 

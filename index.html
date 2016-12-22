@@ -100,6 +100,14 @@
                             </div>
                         </div>
 
+                        <!-- phone -->
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">Phone Number</label>
+                            <div class="col-lg-5">
+                                <input type="text" class="form-control" name="phoneNumber" />
+                            </div>
+                        </div>
+
                         <!-- email -->
                         <div class="form-group">
                             <label class="col-lg-3 control-label">Email address</label>
@@ -417,6 +425,13 @@
                             different: {
                                 field: 'username',
                                 message: 'The password cannot be the same as username'
+                            }
+                        }
+                    },
+                    phoneNumber: {
+                        validators: {
+                            digits: {
+                                message: 'The value can contain only digits'
                             }
                         }
                     },
