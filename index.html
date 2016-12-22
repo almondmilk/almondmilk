@@ -398,6 +398,16 @@
                             }
                         }
                     },
+                    phoneNumber: {
+                        validators: {
+                            digits: {
+                                message: 'The value can contain only digits'
+                            },
+                            notEmpty: {
+                                message: 'The phone number is required and cannot be empty'
+                            }
+                        }
+                    },
                     password: {
                         validators: {
                             notEmpty: {
@@ -425,13 +435,6 @@
                             different: {
                                 field: 'username',
                                 message: 'The password cannot be the same as username'
-                            }
-                        }
-                    },
-                    phoneNumber: {
-                        validators: {
-                            digits: {
-                                message: 'The value can contain only digits'
                             }
                         }
                     },
