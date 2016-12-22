@@ -257,11 +257,25 @@
         <!-- google maps -->
         <div class="row">
             <label class="col-xs-3 control-label">Google Maps</label>
+            <div id="map"></div>
+            <script>
+              function initMap() {
+                var uluru = {lat: -25.363, lng: 131.044};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                  zoom: 4,
+                  center: uluru
+                });
+                var marker = new google.maps.Marker({
+                  position: uluru,
+                  map: map
+                });
+              }
+            </script>
         </div>
 
 
         <!-- image output -->
-        <div class="row" id="displayImages">
+        <!-- <div class="row" id="displayImages">
           <img id="img0" src="about:blank" alt="Image 0">
           <img id="img1" src="about:blank" alt="Image 1">
           <img id="img2" src="about:blank" alt="Image 2">
@@ -279,10 +293,13 @@
               ih2.setAttribute("src", img2);
 
               </script>
-        </div>
+        </div> -->
 
     </div>
 
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPUVDnrT-fJTNI7VcBRULrUF26HbRaCtQ&callback=initMap">
+    </script>
 </body>
 
 </html>
