@@ -56,7 +56,7 @@
 
                         <!-- first and last name -->
                         <div class="form-group">
-                            <label class="col-lg-3 control-label">Full name</label>
+                            <label class="col-lg-3 control-label">Full name * </label>
                             <div class="col-lg-4">
                                 <input type="text" class="form-control" name="firstName" placeholder="First name" />
                             </div>
@@ -103,7 +103,7 @@
 
                         <!-- phone -->
                         <div class="form-group">
-                            <label class="col-lg-3 control-label">Phone Number</label>
+                            <label class="col-lg-3 control-label">Phone Number *</label>
                             <div class="col-lg-5">
                                 <input type="text" class="form-control" name="phoneNumber" />
                             </div>
@@ -111,7 +111,7 @@
 
                         <!-- email -->
                         <div class="form-group">
-                            <label class="col-lg-3 control-label">Email address</label>
+                            <label class="col-lg-3 control-label">Email address *</label>
                             <div class="col-lg-5">
                                 <input type="text" class="form-control" name="email" />
                             </div>
@@ -119,7 +119,7 @@
 
                         <!-- date -->
                         <div class="form-group">
-                            <label class="col-lg-3 control-label">Date</label>
+                            <label class="col-lg-3 control-label">Date *</label>
                             <div class="col-lg-5">
                                 <input type="text" class="form-control" name="date" placeholder="YYYY/MM/DD" />
                             </div>
@@ -131,21 +131,21 @@
                         </div>
 
                         <div class="form-group">
-                            <label class="col-lg-3 control-label">Street</label>
+                            <label class="col-lg-3 control-label">Street *</label>
                             <div class="col-lg-5">
                                 <input type="text" class="form-control" name="street" />
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label class="col-lg-3 control-label">City</label>
+                            <label class="col-lg-3 control-label">City *</label>
                             <div class="col-lg-5">
                                 <input type="text" class="form-control" name="city" />
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label class="col-lg-3 control-label">State</label>
+                            <label class="col-lg-3 control-label">State *</label>
                             <div class="col-lg-5">
                                 <select name="state" class="form-control">
                                     <option value="">Select a state</option>
@@ -205,7 +205,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label class="col-lg-3 control-label">Zip Code</label>
+                            <label class="col-lg-3 control-label">Zip Code *</label>
                             <div class="col-lg-3">
                                 <input type="text" class="form-control" name="zipCode" />
                             </div>
@@ -213,7 +213,7 @@
 
                         <!-- category -->
                         <div class="form-group">
-                            <label class="col-lg-3 control-label">Category</label>
+                            <label class="col-lg-3 control-label">Category *</label>
                             <div class="col-lg-5">
                                 <select class="form-control" name="category">
                                     <option value="">Select a category</option>
@@ -238,8 +238,8 @@
                             <label class="col-lg-3 control-label">Upload Image(s)</label>
                             <div id="wrapper" class="col-lg-5">
                                 <input id="fileUpload" type="file" multiple />
-                                  <br />
-                                  <div id="image-holder"></div>
+                                <br />
+                                <div id="image-holder"></div>
                             </div>
                         </div>
 
@@ -249,19 +249,62 @@
 
                         <!-- terms -->
                         <div class="form-group">
-                            <label class="col-lg-3 control-label">Terms</label>
+                            <label class="col-lg-3 control-label">Terms *</label>
                             <div class="col-lg-5">
                                 <div class="checkbox">
-                                    <input type="checkbox" name="terms" /> Accept the terms and policies
+                                    <input type="checkbox" name="acceptTerms" /> Accept the terms and policies
                                 </div>
                             </div>
                         </div>
 
                         <!-- catpcha -->
                         <div class="form-group">
-                            <label class="col-lg-3 control-label">Captcha</label>
+                            <!-- <label class="col-lg-3 control-label">Captcha *</label> -->
+                            <h5 class="col-lg-3 control-label"><b>Captcha *</b></h5>
                             <div class="col-lg-5">
-                                <div class="g-recaptcha" data-sitekey="6Lc_Og8UAAAAAN7g8i4fw32TaqMeXes6yfpv7aNw"></div>
+                                <script>
+                                    var randNum = Math.floor(Math.random() * ((11 + 1) - 2)) + 2;
+                                    if (randNum == 2) {
+                                        document.write('<img src="1.jpg">');
+                                        document.write('<input type="text" class="form-control" name="captchaOne" />');
+                                    }
+                                    if (randNum == 3) {
+                                        document.write('<img src="2.jpg">');
+                                        document.write('<input type="text" class="form-control" name="captchaTwo" />');
+                                    }
+                                    if (randNum == 4) {
+                                        document.write('<img src="3.jpg">');
+                                        document.write('<input type="text" class="form-control" name="captchaThree" />');
+                                    }
+                                    if (randNum == 5) {
+                                        document.write('<img src="4.jpg">');
+                                        document.write('<input type="text" class="form-control" name="captchaFour" />');
+                                    }
+                                    if (randNum == 6) {
+                                        document.write('<img src="5.jpg">');
+                                        document.write('<input type="text" class="form-control" name="captchaFive" />');
+                                    }
+                                    if (randNum == 7) {
+                                        document.write('<img src="6.jpg">');
+                                        document.write('<input type="text" class="form-control" name="captchaSix" />');
+                                    }
+                                    if (randNum == 8) {
+                                        document.write('<img src="7.jpg">');
+                                        document.write('<input type="text" class="form-control" name="captchaSeven" />');
+                                    }
+                                    if (randNum == 9) {
+                                        document.write('<img src="8.jpg">');
+                                        document.write('<input type="text" class="form-control" name="captchaEight" />');
+                                    }
+                                    if (randNum == 10) {
+                                        document.write('<img src="9.jpg">');
+                                        document.write('<input type="text" class="form-control" name="captchaNine" />');
+                                    }
+                                    if (randNum == 11) {
+                                        document.write('<img src="10.jpg">');
+                                        document.write('<input type="text" class="form-control" name="captchaTen" />');
+                                    }
+                                </script>
                             </div>
                         </div>
 
@@ -344,6 +387,156 @@
                             },
                             notEmpty: {
                                 message: 'The email is required'
+                            }
+                        }
+                    },
+                    captchaOne: {
+                        validators: {
+                            stringLength: {
+                                min: 5,
+                                max: 5,
+                            },
+                            notEmpty: {
+                                message: 'The captcha is required'
+                            },
+                            regexp: {
+                                regexp: /^[R]+[8]+[4]+[C]+[H]$/,
+                                message: 'The captcha is invalid'
+                            }
+                        }
+                    },
+                    captchaTwo: {
+                        validators: {
+                            stringLength: {
+                                min: 5,
+                                max: 5,
+                            },
+                            notEmpty: {
+                                message: 'The captcha is required'
+                            },
+                            regexp: {
+                                regexp: /^[Y]+[U]+[4]+[R]+[T]$/,
+                                message: 'The captcha is invalid'
+                            }
+                        }
+                    },
+                    captchaThree: {
+                        validators: {
+                            stringLength: {
+                                min: 5,
+                                max: 5,
+                            },
+                            notEmpty: {
+                                message: 'The captcha is required'
+                            },
+                            regexp: {
+                                regexp: /^[Y]+[U]+[4]+[R]+[T]$/,
+                                message: 'The captcha is invalid'
+                            }
+                        }
+                    },
+                    captchaFour: {
+                        validators: {
+                            stringLength: {
+                                min: 5,
+                                max: 5,
+                            },
+                            notEmpty: {
+                                message: 'The captcha is required'
+                            },
+                            regexp: {
+                                regexp: /^[Y]+[U]+[4]+[R]+[T]$/,
+                                message: 'The captcha is invalid'
+                            }
+                        }
+                    },
+                    captchaFive: {
+                        validators: {
+                            stringLength: {
+                                min: 5,
+                                max: 5,
+                            },
+                            notEmpty: {
+                                message: 'The captcha is required'
+                            },
+                            regexp: {
+                                regexp: /^[Y]+[U]+[4]+[R]+[T]$/,
+                                message: 'The captcha is invalid'
+                            }
+                        }
+                    },
+                    captchaSix: {
+                        validators: {
+                            stringLength: {
+                                min: 5,
+                                max: 5,
+                            },
+                            notEmpty: {
+                                message: 'The captcha is required'
+                            },
+                            regexp: {
+                                regexp: /^[Y]+[U]+[4]+[R]+[T]$/,
+                                message: 'The captcha is invalid'
+                            }
+                        }
+                    },
+                    captchaSeven: {
+                        validators: {
+                            stringLength: {
+                                min: 5,
+                                max: 5,
+                            },
+                            notEmpty: {
+                                message: 'The captcha is required'
+                            },
+                            regexp: {
+                                regexp: /^[Y]+[U]+[4]+[R]+[T]$/,
+                                message: 'The captcha is invalid'
+                            }
+                        }
+                    },
+                    captchaEight: {
+                        validators: {
+                            stringLength: {
+                                min: 5,
+                                max: 5,
+                            },
+                            notEmpty: {
+                                message: 'The captcha is required'
+                            },
+                            regexp: {
+                                regexp: /^[Y]+[U]+[4]+[R]+[T]$/,
+                                message: 'The captcha is invalid'
+                            }
+                        }
+                    },
+                    captchaNine: {
+                        validators: {
+                            stringLength: {
+                                min: 5,
+                                max: 5,
+                            },
+                            notEmpty: {
+                                message: 'The captcha is required'
+                            },
+                            regexp: {
+                                regexp: /^[Y]+[U]+[4]+[R]+[T]$/,
+                                message: 'The captcha is invalid'
+                            }
+                        }
+                    },
+                    captchaTen: {
+                        validators: {
+                            stringLength: {
+                                min: 5,
+                                max: 5,
+                            },
+                            notEmpty: {
+                                message: 'The captcha is required'
+                            },
+                            regexp: {
+                                regexp: /^[Y]+[U]+[4]+[R]+[T]$/,
+                                message: 'The captcha is invalid'
                             }
                         }
                     },
