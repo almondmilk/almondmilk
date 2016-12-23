@@ -5,7 +5,7 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php session_start(); ?>
     <title>SFSU CS Department - CSC 642 Fall 2016 project: Form UI Alvin Lu alvinlu@mail.sfsu.edu</title>
     <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.css" />
@@ -37,7 +37,11 @@
          * element that contains the map. */
         #map {
           height: 100%;
-          position: static;
+        }
+        html, body{
+          height: 100%;
+          margin: 0;
+          padding: 0;
         }
 
     </style>
@@ -303,8 +307,8 @@
 
     </div>
 
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPUVDnrT-fJTNI7VcBRULrUF26HbRaCtQ&callback=initMap">
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPUVDnrT-fJTNI7VcBRULrUF26HbRaCtQ&callback=initMap" async defer>
     </script>
 </body>
 
