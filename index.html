@@ -69,21 +69,12 @@
                         <div class="form-group">
                             <label class="col-lg-3 control-label">Gender</label>
                             <div class="col-lg-5">
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" name="gender" value="Male" /> Male
-                                    </label>
-                                </div>
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" name="gender" value="Female" /> Female
-                                    </label>
-                                </div>
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" name="gender" value="Other" /> Other
-                                    </label>
-                                </div>
+                                  <select class="form-control" name="gender">
+                                      <option value="">Select your gender</option>
+                                      <option value="Male">Male</option>
+                                      <option value="Female">Female</option>
+                                      <option value="Other">Other</option>
+                                  </select>
                             </div>
                         </div>
 
@@ -234,14 +225,14 @@
                         </div>
 
                         <!-- image upload -->
-                        <div class="form-group">
+                        <!-- <div class="form-group">
                             <label class="col-lg-3 control-label">Upload Image(s)</label>
                             <div id="wrapper" class="col-lg-5">
                                 <input id="fileUpload" type="file" multiple />
                                 <br />
                                 <div id="image-holder"></div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="page-header">
                             <h4 style='text-align: left;'>Terms and Agreement</h4>
@@ -311,9 +302,9 @@
                         <!-- buttons -->
                         <div class="form-group">
                             <div class="col-lg-9 col-lg-offset-3">
-                                <button type="submit" class="btn btn-primary" value="Submit">Submit</button>
+                                <button type="button" class="btn btn-info" style="color: red;" id="resetBtn">Reset form</button>
                                 <button type="button" class="btn btn-info" id="validateBtn">Manual validate</button>
-                                <button type="button" class="btn btn-info" id="resetBtn">Reset form</button>
+                                <button type="submit" class="btn btn-primary" value="Submit">Submit</button>
                             </div>
                         </div>
 
@@ -355,49 +346,24 @@
                             }
                         }
                     },
-                    username: {
-                        message: 'The username is not valid',
-                        validators: {
-                            notEmpty: {
-                                message: 'The username is required and cannot be empty'
-                            },
-                            stringLength: {
-                                min: 6,
-                                max: 30,
-                                message: 'The username must be more than 6 and less than 30 characters long'
-                            },
-                            regexp: {
-                                regexp: /^[a-zA-Z0-9_\.]+$/,
-                                message: 'The username can only consist of alphabetical, number, dot and underscore'
-                            },
-                            remote: {
-                                url: 'remote.php',
-                                message: 'The username is not available'
-                            },
-                            different: {
-                                field: 'password',
-                                message: 'The username and password cannot be the same as each other'
-                            }
-                        }
-                    },
                     email: {
                         validators: {
                             emailAddress: {
                                 message: 'The input is not a valid email address'
                             },
                             notEmpty: {
-                                message: 'The email is required'
+                                message: 'The email is required and cannot be empty'
                             }
                         }
                     },
                     captchaOne: {
                         validators: {
-                            stringLength: {
-                                min: 5,
-                                max: 5,
-                            },
+                            // stringLength: {
+                            //     min: 5,
+                            //     max: 5,
+                            // },
                             notEmpty: {
-                                message: 'The captcha is required'
+                                message: 'The captcha is required and cannot be empty'
                             },
                             regexp: {
                                 regexp: /^[R]+[8]+[4]+[C]+[H]$/,
@@ -407,12 +373,12 @@
                     },
                     captchaTwo: {
                         validators: {
-                            stringLength: {
-                                min: 5,
-                                max: 5,
-                            },
+                            // stringLength: {
+                            //     min: 5,
+                            //     max: 5,
+                            // },
                             notEmpty: {
-                                message: 'The captcha is required'
+                                message: 'The captcha is required and cannot be empty'
                             },
                             regexp: {
                                 regexp: /^[Y]+[U]+[4]+[R]+[T]$/,
@@ -422,12 +388,12 @@
                     },
                     captchaThree: {
                         validators: {
-                            stringLength: {
-                                min: 5,
-                                max: 5,
-                            },
+                            // stringLength: {
+                            //     min: 5,
+                            //     max: 5,
+                            // },
                             notEmpty: {
-                                message: 'The captcha is required'
+                                message: 'The captcha is required and cannot be empty'
                             },
                             regexp: {
                                 regexp: /^[W]+[9]+[3]+[B]+[X]$/,
@@ -437,12 +403,12 @@
                     },
                     captchaFour: {
                         validators: {
-                            stringLength: {
-                                min: 5,
-                                max: 5,
-                            },
+                            // stringLength: {
+                            //     min: 5,
+                            //     max: 5,
+                            // },
                             notEmpty: {
-                                message: 'The captcha is required'
+                                message: 'The captcha is required and cannot be empty'
                             },
                             regexp: {
                                 regexp: /^[R]+[B]+[S]+[K]+[W]$/,
@@ -452,12 +418,12 @@
                     },
                     captchaFive: {
                         validators: {
-                            stringLength: {
-                                min: 5,
-                                max: 5,
-                            },
+                            // stringLength: {
+                            //     min: 5,
+                            //     max: 5,
+                            // },
                             notEmpty: {
-                                message: 'The captcha is required'
+                                message: 'The captcha is required and cannot be empty'
                             },
                             regexp: {
                                 regexp: /^[6]+[H]+[3]+[T]+[8]$/,
@@ -467,12 +433,12 @@
                     },
                     captchaSix: {
                         validators: {
-                            stringLength: {
-                                min: 5,
-                                max: 5,
-                            },
+                            // stringLength: {
+                            //     min: 5,
+                            //     max: 5,
+                            // },
                             notEmpty: {
-                                message: 'The captcha is required'
+                                message: 'The captcha is required and cannot be empty'
                             },
                             regexp: {
                                 regexp: /^[B]+[4]+[T]+[9]+[S]$/,
@@ -482,12 +448,12 @@
                     },
                     captchaSeven: {
                         validators: {
-                            stringLength: {
-                                min: 5,
-                                max: 5,
-                            },
+                            // stringLength: {
+                            //     min: 5,
+                            //     max: 5,
+                            // },
                             notEmpty: {
-                                message: 'The captcha is required'
+                                message: 'The captcha is required and cannot be empty'
                             },
                             regexp: {
                                 regexp: /^[N]+[8]+[C]+[6]+[H]$/,
@@ -497,12 +463,12 @@
                     },
                     captchaEight: {
                         validators: {
-                            stringLength: {
-                                min: 5,
-                                max: 5,
-                            },
+                            // stringLength: {
+                            //     min: 5,
+                            //     max: 5,
+                            // },
                             notEmpty: {
-                                message: 'The captcha is required'
+                                message: 'The captcha is required and cannot be empty'
                             },
                             regexp: {
                                 regexp: /^[4]+[N]+[V]+[3]+[A]$/,
@@ -512,12 +478,12 @@
                     },
                     captchaNine: {
                         validators: {
-                            stringLength: {
-                                min: 5,
-                                max: 5,
-                            },
+                            // stringLength: {
+                            //     min: 5,
+                            //     max: 5,
+                            // },
                             notEmpty: {
-                                message: 'The captcha is required'
+                                message: 'The captcha is required and cannot be empty'
                             },
                             regexp: {
                                 regexp: /^[C]+[4]+[6]+[U]+[5]$/,
@@ -527,12 +493,12 @@
                     },
                     captchaTen: {
                         validators: {
-                            stringLength: {
-                                min: 5,
-                                max: 5,
-                            },
+                            // stringLength: {
+                            //     min: 5,
+                            //     max: 5,
+                            // },
                             notEmpty: {
-                                message: 'The captcha is required'
+                                message: 'The captcha is required and cannot be empty'
                             },
                             regexp: {
                                 regexp: /^[R]+[4]+[8]+[E]+[K]$/,
@@ -542,6 +508,10 @@
                     },
                     education: {
                         validators: {
+                            regexp: {
+                                regexp: /^(High School Diploma|Bachelor's Degree|Master's Degree|PhD Degree|)$/,
+                                message: 'The education is invalid'
+                            }
                             // notEmpty: {
                             //     message: 'The education is required and can\'t be empty'
                             // }
@@ -586,7 +556,7 @@
                         validators: {
                             zipCode: {
                                 country: 'US',
-                                message: 'The input is not a valid US zip code'
+                                message: 'The zip code is not a valid US zip code'
                             },
                             notEmpty: {
                                 message: 'The zip code is required and cannot be empty'
@@ -596,40 +566,10 @@
                     phoneNumber: {
                         validators: {
                             digits: {
-                                message: 'The value can contain only digits'
+                                message: 'The phone number can contain only digits'
                             },
                             notEmpty: {
                                 message: 'The phone number is required and cannot be empty'
-                            }
-                        }
-                    },
-                    password: {
-                        validators: {
-                            notEmpty: {
-                                message: 'The password is required and cannot be empty'
-                            },
-                            identical: {
-                                field: 'confirmPassword',
-                                message: 'The password and its confirm are not the same'
-                            },
-                            different: {
-                                field: 'username',
-                                message: 'The password cannot be the same as username'
-                            }
-                        }
-                    },
-                    confirmPassword: {
-                        validators: {
-                            notEmpty: {
-                                message: 'The confirm password is required and cannot be empty'
-                            },
-                            identical: {
-                                field: 'password',
-                                message: 'The password and its confirm are not the same'
-                            },
-                            different: {
-                                field: 'username',
-                                message: 'The password cannot be the same as username'
                             }
                         }
                     },
@@ -640,15 +580,16 @@
                                 message: 'The date is not valid'
                             },
                             notEmpty: {
-                                message: 'The date is required'
+                                message: 'The date is required and cannot be empty'
                             }
                         }
                     },
                     gender: {
                         validators: {
-                            // notEmpty: {
-                            //     message: 'The gender is required'
-                            // }
+                            regexp: {
+                                regexp: /^(Male|Female|Other|)$/,
+                                message: 'The gender is invalid'
+                            }
                         }
                     },
                     'languages[]': {

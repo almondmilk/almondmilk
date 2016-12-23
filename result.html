@@ -91,9 +91,13 @@
         var replacedLastName = replacedLastName.split('+').join(' ');
 
         var gender = decodeURI(params["gender"]);
+        var replacedGender = gender.split('').join('undefined');
 
         var education = decodeURI(params["education"]);
         var replacedEducation = education.split('+').join(' ');
+        if (replacedEducation == ''){
+          replacedEducation = undefined;
+        }
 
         var phone = decodeURI(params["phoneNumber"]);
 
@@ -128,6 +132,9 @@
         var comment = decodeURI(params["comment"]);
         var replacedComment = comment.split('+').join(' ');
         var replacedComment = replacedComment.replace(/%2C/g, ",");
+        if (replacedComment == ''){
+          replacedComment = undefined;
+        }
 
         var terms = decodeURI(params["terms"]);
         var replacedTerms = terms.replace("on","Accepted");
@@ -206,6 +213,7 @@
             <h4 style='text-align: left;'>Location</h4>
         </div>
 
+        <!-- google maps -->
         <div class="row">
             <h5 style="text-align: right;" class="col-xs-3 control-h5 style="text-align: right;"">Google Maps</h5 style="text-align: right;">
             <h5 style="text-align: left;" class="col-xs-4 control-h5 style="text-align: right;"">
@@ -257,7 +265,7 @@
         <!-- comment -->
         <div class="row">
             <h5 style="text-align: right;" class="col-xs-3 control-h5 style="text-align: right;"">Comment</h5 style="text-align: right;">
-            <h5 style="text-align: right;" class="col-xs-4 control-h5 style="text-align: right;"">
+            <h5 style="text-align: left;" class="col-xs-4 control-h5 style="text-align: right;"">
                 <script LANGUAGE="JavaScript">document.write(replacedComment);</script>
             </h5 style="text-align: right;">
         </div>
