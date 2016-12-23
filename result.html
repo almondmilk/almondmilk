@@ -62,7 +62,7 @@
 </head>
 
 <body>
-    <script LANGUAGE="JavaScript">
+    <script>
 
         function getParams() {
             var idx = document.URL.indexOf('?');
@@ -90,12 +90,16 @@
         var replacedLastName = replacedLastName.split('+').join(' ');
 
         var gender = decodeURI(params["gender"]);
-        var replacedGender = gender.split('').join('undefined');
+        var replacedGender;
+        if (gender == ''){
+          replacedGender = 'undefined';
+        }
+
 
         var education = decodeURI(params["education"]);
         var replacedEducation = education.split('+').join(' ');
         if (replacedEducation == ''){
-          replacedEducation = undefined;
+          replacedEducation = 'undefined';
         }
 
         var phone = decodeURI(params["phoneNumber"]);
@@ -156,7 +160,7 @@
         <div class="row">
             <h5 style="text-align: right;" class="col-xs-3 control-h5 style="text-align: right;"">First Name</h5 style="text-align: right;">
             <h5 style="text-align: left;" class="col-xs-4 control-h5 style="text-align: right;"">
-                <script LANGUAGE="JavaScript">document.write(replacedFirstName);</script>
+                <script>document.write(replacedFirstName);</script>
             </h5 style="text-align: right;">
         </div>
 
@@ -164,7 +168,7 @@
         <div class="row">
             <h5 style="text-align: right;" class="col-xs-3 control-h5 style="text-align: right;"">Last Name</h5 style="text-align: right;">
             <h5 style="text-align: left;" class="col-xs-4 control-h5 style="text-align: right;"">
-                <script LANGUAGE="JavaScript">document.write(replacedLastName);</script>
+                <script>document.write(replacedLastName);</script>
             </h5 style="text-align: right;">
         </div>
 
@@ -172,7 +176,7 @@
         <div class="row">
             <h5 style="text-align: right;" class="col-xs-3 control-h5 style="text-align: right;"">Gender</h5 style="text-align: right;">
             <h5 style="text-align: left;" class="col-xs-4 control-h5 style="text-align: right;"">
-                <script LANGUAGE="JavaScript">document.write(gender);</script>
+                <script>document.write(replacedGender);</script>
             </h5 style="text-align: right;">
         </div>
 
@@ -180,7 +184,7 @@
         <div class="row">
             <h5 style="text-align: right;" class="col-xs-3 control-h5 style="text-align: right;"">Highest Education</h5 style="text-align: right;">
             <h5 style="text-align: left;" class="col-xs-4 control-h5 style="text-align: right;"">
-                <script LANGUAGE="JavaScript">document.write(replacedEducation);</script>
+                <script>document.write(replacedEducation);</script>
             </h5 style="text-align: right;">
         </div>
 
@@ -188,7 +192,7 @@
         <div class="row">
             <h5 style="text-align: right;" class="col-xs-3 control-h5 style="text-align: right;"">Phone Number</h5 style="text-align: right;">
             <h5 style="text-align: left;" class="col-xs-4 control-h5 style="text-align: right;"">
-                <script LANGUAGE="JavaScript">document.write(phone);</script>
+                <script>document.write(phone);</script>
             </h5 style="text-align: right;">
         </div>
 
@@ -196,7 +200,7 @@
         <div class="row">
             <h5 style="text-align: right;" class="col-xs-3 control-h5 style="text-align: right;"">Email Address</h5 style="text-align: right;">
             <h5 style="text-align: left;" class="col-xs-4 control-h5 style="text-align: right;"">
-                <script LANGUAGE="JavaScript">document.write(replacedEmail);</script>
+                <script>document.write(replacedEmail);</script>
             </h5 style="text-align: right;">
         </div>
 
@@ -204,7 +208,7 @@
         <div class="row">
             <h5 style="text-align: right;" class="col-xs-3 control-h5 style="text-align: right;"">Date</h5 style="text-align: right;">
             <h5 style="text-align: left;" class="col-xs-4 control-h5 style="text-align: right;"">
-                <script LANGUAGE="JavaScript">document.write(replacedDate);</script>
+                <script>document.write(replacedDate);</script>
             </h5 style="text-align: right;">
         </div>
 
@@ -225,7 +229,7 @@
         <div class="row">
             <h5 style="text-align: right;" class="col-xs-3 control-h5 style="text-align: right;"">Street</h5 style="text-align: right;">
             <h5 style="text-align: left;" class="col-xs-4 control-h5 style="text-align: right;"">
-                <script LANGUAGE="JavaScript">document.write(replacedStreet);</script>
+                <script>document.write(replacedStreet);</script>
             </h5 style="text-align: right;">
         </div>
 
@@ -233,7 +237,7 @@
         <div class="row">
             <h5 style="text-align: right;" class="col-xs-3 control-h5 style="text-align: right;"">City</h5 style="text-align: right;">
             <h5 style="text-align: left;" class="col-xs-4 control-h5 style="text-align: right;"">
-                <script LANGUAGE="JavaScript">document.write(replacedCity);</script>
+                <script>document.write(replacedCity);</script>
             </h5 style="text-align: right;">
         </div>
 
@@ -241,7 +245,7 @@
         <div class="row">
             <h5 style="text-align: right;" class="col-xs-3 control-h5 style="text-align: right;"">State</h5 style="text-align: right;">
             <h5 style="text-align: left;" class="col-xs-4 control-h5 style="text-align: right;"">
-                <script LANGUAGE="JavaScript">document.write(replacedState);</script>
+                <script>document.write(replacedState);</script>
             </h5 style="text-align: right;">
         </div>
 
@@ -249,7 +253,7 @@
         <div class="row">
             <h5 style="text-align: right;" class="col-xs-3 control-h5 style="text-align: right;"">Zip Code</h5 style="text-align: right;">
             <h5 style="text-align: left;" class="col-xs-4 control-h5 style="text-align: right;"">
-                <script LANGUAGE="JavaScript">document.write(replacedZipCode);</script>
+                <script>document.write(replacedZipCode);</script>
             </h5 style="text-align: right;">
         </div>
 
@@ -257,7 +261,7 @@
         <div class="row">
             <h5 style="text-align: right;" class="col-xs-3 control-h5 style="text-align: right;"">Category</h5 style="text-align: right;">
             <h5 style="text-align: left;" class="col-xs-4 control-h5 style="text-align: right;"">
-                <script LANGUAGE="JavaScript">document.write(replacedCategory);</script>
+                <script>document.write(replacedCategory);</script>
             </h5 style="text-align: right;">
         </div>
 
@@ -265,7 +269,7 @@
         <div class="row">
             <h5 style="text-align: right;" class="col-xs-3 control-h5 style="text-align: right;"">Comment</h5 style="text-align: right;">
             <h5 style="text-align: left;" class="col-xs-4 control-h5 style="text-align: right;"">
-                <script LANGUAGE="JavaScript">document.write(replacedComment);</script>
+                <script>document.write(replacedComment);</script>
             </h5 style="text-align: right;">
         </div>
 
@@ -278,7 +282,7 @@
         <div class="row">
             <h5 style="text-align: right;" class="col-xs-3 control-h5 style="text-align: right;"">Terms and Agreement</h5 style="text-align: right;">
             <h5 style="text-align: left;" class="col-xs-4 control-h5 style="text-align: right;"">
-                <script LANGUAGE="JavaScript">document.write('Accepted');</script>
+                <script>document.write('Accepted');</script>
             </h5 style="text-align: right;">
         </div>
 
@@ -290,7 +294,7 @@
         <div class="row">
             <h5 style="text-align: right;" class="col-xs-3 control-h5 style="text-align: right;"">Captcha</h5 style="text-align: right;">
             <h5 style="text-align: left;" class="col-xs-4 control-h5 style="text-align: right;"">
-                <script LANGUAGE="JavaScript">document.write("Verified");</script>
+                <script>document.write("Verified");</script>
             </h5 style="text-align: right;">
         </div>
 
