@@ -62,6 +62,11 @@ $firstName = $_POST['firstName'];
 
 </head>
 <body>
+  <script>
+      //forms
+      // firstName
+      var firstName = document.write('<?php echo $firstName;?>');
+  </script>
   <div class="col-xs-8 col-xs-offset-2">
 
     <div class="page-header">
@@ -172,9 +177,7 @@ $firstName = $_POST['firstName'];
       });
     }
 
-    //forms
-    // firstName
-    var firstName = document.write('<?php echo $firstName;?>');
+
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5UB-333Aqb-x4CWxmqShkuy91KzSRxSM&callback=initMap" async defer></script>
 </body>
