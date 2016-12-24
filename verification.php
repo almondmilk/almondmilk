@@ -303,6 +303,28 @@ $terms = $_POST['terms'];
           </div>
         </div>
 
+        <div class="page-header">
+            <h4 style='text-align: left;'>Terms and agreement</h4>
+        </div>
+
+        <div class="row">
+          <h5 style="text-align: right;" class="col-xs-3 control-h5">Terms and agreement</h5>
+          <h5 style="text-align: left;" class="col-xs-4 control-h5">
+            <script>document.write('Accepted');</script>
+          </h5>
+        </div>
+
+        <div class="page-header">
+            <h4 style='text-align: left;'>Captcha</h4>
+        </div>
+
+        <div class="row">
+          <h5 style="text-align: right;" class="col-xs-3 control-h5">Captcha</h5>
+          <h5 style="text-align: left;" class="col-xs-4 control-h5">
+            <script>document.write('Verified');</script>
+          </h5>
+        </div>
+
     </div>
 
     <script>
