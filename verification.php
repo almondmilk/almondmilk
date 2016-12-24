@@ -257,8 +257,7 @@ $terms = $_POST['terms'];
                 }
                 // Check if file already exists
                 if (file_exists($target_file)) {
-                    if($target_file != ""){
-                        echo $target_file;
+                    if($target_file != "uploads/"){
                         echo 'Sorry, file already exists.';
                     }
                     $uploadOk = 0;
