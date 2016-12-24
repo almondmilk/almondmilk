@@ -6,6 +6,13 @@ $education = $_POST['education'];
 $phoneNumber = $_POST['phoneNumber'];
 $email = $_POST['email'];
 $date = $_POST['date'];
+$street = $_POST['street'];
+$city = $_POST['city'];
+$state = $_POST['state'];
+$zipCode = $_POST['zipCode'];
+$category = $_POST['category'];
+$comment = $_POST['comment'];
+$terms = $_POST['terms'];
 
 ?>
 <!DOCTYPE html>
@@ -162,6 +169,21 @@ $date = $_POST['date'];
       <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">Last Name</h5>
       <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
         <script>document.write(lastName);</script>
+      </h5>
+    </div>
+
+    <!-- Gender -->
+    <div class="row">
+      <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">Gender</h5>
+      <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
+        <script>document.write(gender);</script>
+      </h5>
+    </div>
+    <!-- Education -->
+    <div class="row">
+      <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">Education</h5>
+      <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
+        <script>document.write(education);</script>
       </h5>
     </div>
 
