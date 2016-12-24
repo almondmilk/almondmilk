@@ -90,7 +90,7 @@
         var replacedLastName = replacedLastName.split('+').join(' ');
 
         var gender = decodeURI(params["gender"]);
-        var replacedGender;
+        var replacedGender = gender;
         if (gender == ''){
           replacedGender = 'undefined';
         }
@@ -149,7 +149,7 @@
     <div class="col-xs-8 col-xs-offset-2">
 
         <div class="page-header">
-            <h2 style='text-align: center;'>Form Results</h2>
+            <h2 style='text-align: center;'>Please verify your submission</h2>
         </div>
 
         <div class="page-header">
