@@ -179,8 +179,8 @@ $terms = $_POST['terms'];
 
         <!-- google maps -->
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5 style="text-align: right;>Google Maps</h5 style="text-align: right;">
-            <h5 style="text-align: left;" class="col-xs-4 control-h5 style="text-align: right;>
+          <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">Google Maps</h5 style="text-align: right;">
+            <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
 
               <div id="map" style="width:400px;height:400px;background:white"></div>
             </h5 style="text-align: right;">
