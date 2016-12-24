@@ -187,6 +187,22 @@ $terms = $_POST['terms'];
       </h5>
     </div>
 
+    <!-- Phone Number -->
+    <div class="row">
+      <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">Phone Number</h5>
+      <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
+        <script>document.write(phoneNumber);</script>
+      </h5>
+    </div>
+
+    <!-- Email -->
+    <div class="row">
+      <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">Email</h5>
+      <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
+        <script>document.write(email);</script>
+      </h5>
+    </div>
+
     <!-- google maps -->
     <div class="row">
       <h5 style="text-align: right;" class="col-xs-3 control-h5 style="text-align: right;"">Google Maps</h5 style="text-align: right;">
