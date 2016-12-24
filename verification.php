@@ -233,6 +233,54 @@ $terms = $_POST['terms'];
       </div>
     </div>
 
+    <!-- street -->
+    <div class="row">
+      <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">Street</h5>
+      <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
+        <script>document.write(street);</script>
+      </h5>
+    </div>
+
+    <!-- city -->
+    <div class="row">
+      <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">City</h5>
+      <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
+        <script>document.write(city);</script>
+      </h5>
+    </div>
+
+    <!-- state -->
+    <div class="row">
+      <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">State</h5>
+      <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
+        <script>document.write(state);</script>
+      </h5>
+    </div>
+
+    <!-- zip code -->
+    <div class="row">
+      <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">Zip Code</h5>
+      <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
+        <script>document.write(zipCode);</script>
+      </h5>
+    </div>
+
+    <!-- category -->
+    <div class="row">
+      <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">Category</h5>
+      <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
+        <script>document.write(category);</script>
+      </h5>
+    </div>
+
+    <!-- comment -->
+    <div class="row">
+      <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">Comment</h5>
+      <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
+        <script>document.write(comment);</script>
+      </h5>
+    </div>
+
     <script>
     function initMap() {
       var map = new google.maps.Map(document.getElementById('map'), {
