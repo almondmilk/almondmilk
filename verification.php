@@ -67,7 +67,7 @@ $firstName = $_POST['firstName'];
     <div class="page-header">
       <h2 style='text-align: center;'>Please verify your submission</h2>
     </div>
-    
+
     <div class="row">
       <?php
       $target_dir = 'uploads/';
@@ -114,106 +114,68 @@ $firstName = $_POST['firstName'];
                 echo 'Sorry, there was an error uploading your file.';
             }
         }
+        ?>
+    </div>
 
-      /* Below is the single-file version of the image upload code.
-      *
-      $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
-      $uploadOk = 1;
-      $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
-      // Check if image file is a actual image or fake image
-      if(isset($_POST["submit"])) {
-      $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
-      if($check !== false) {
-      echo "File is an image - " . $check["mime"] . ".";
-      $uploadOk = 1;
-    } else {
-    echo "File is not an image.";
-    $uploadOk = 0;
-  }
-}
-// Check if file already exists
-if (file_exists($target_file)) {
-echo "Sorry, file already exists.";
-$uploadOk = 0;
-}
-// Check file size
-if ($_FILES["fileToUpload"]["size"] > 5000000) {
-echo "Sorry, your file is too large.";
-$uploadOk = 0;
-}
-// Allow certain file formats
-if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
-&& $imageFileType != "gif" ) {
-echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
-$uploadOk = 0;
-}
-// Check if $uploadOk is set to 0 by an error
-if ($uploadOk == 0) {
-echo "Sorry, your file was not uploaded.";
-// if everything is ok, try to upload file
-} else {
-if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
-echo '<img src="' . $target_file . '" alt="">';
-} else {
-echo "Sorry, there was an error uploading your file.";
-}
-}*/
-?>
-</div>
+    <!-- First Name -->
+    <div class="row">
+      <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">First Name</h5>
+      <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
+        <?php echo $firstName;?>
+        <br>
+        <script>document.write(firstName);</script>
+        <br>
+        <script>
+        document.write('<?php echo $firstName;?>');
+        </script>
+      </h5>
+    </div>
 
-<div class="row">
-  <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">First Name</h5>
-  <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
-    <?php echo $firstName; ?>
-    <br>
+    <!-- google maps -->
+    <div class="row">
+      <h5 style="text-align: right;" class="col-xs-3 control-h5 style="text-align: right;"">Google Maps</h5 style="text-align: right;">
+        <h5 style="text-align: left;" class="col-xs-4 control-h5 style="text-align: right;"">
+
+          <div id="map" style="width:400px;height:400px;background:white"></div>
+        </h5 style="text-align: right;">
+      </div>
+    </div>
+
     <script>
-    document.write('<?php echo $firstName; ?>');
-    </script>
-  </h5>
-</div>
-
-<!-- google maps -->
-<div class="row">
-  <h5 style="text-align: right;" class="col-xs-3 control-h5 style="text-align: right;"">Google Maps</h5 style="text-align: right;">
-    <h5 style="text-align: left;" class="col-xs-4 control-h5 style="text-align: right;"">
-
-      <div id="map" style="width:400px;height:400px;background:white"></div>
-    </h5 style="text-align: right;">
-  </div>
-</div>
-
-<script>
-function initMap() {
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 15,
-    center: {lat: -34.397, lng: 150.644}
-  });
-  var geocoder = new google.maps.Geocoder();
-  //var address = '3654 Baldwin Hills Court South San Francisco';
-  var address = replacedStreet + replacedCity + replacedState + replacedZipCode;
-  geocodeAddress(geocoder, map, address)
-  // document.getElementById('submit').addEventListener('click', function() {
-  //   geocodeAddress(geocoder, map);
-  // });
-}
-
-function geocodeAddress(geocoder, resultsMap, address) {
-  //var address = document.getElementById('address').value;
-  //address = '3654 Baldwin Hills Court South San Francisco';
-  geocoder.geocode({'address': address}, function(results, status) {
-    if (status === 'OK') {
-      resultsMap.setCenter(results[0].geometry.location);
-      var marker = new google.maps.Marker({
-        map: resultsMap,
-        position: results[0].geometry.location
+    function initMap() {
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 15,
+        center: {lat: -34.397, lng: 150.644}
       });
-    } else {
-      alert('Geocode was not successful for the following reason: ' + status);
+      var geocoder = new google.maps.Geocoder();
+      //var address = '3654 Baldwin Hills Court South San Francisco';
+      var address = replacedStreet + replacedCity + replacedState + replacedZipCode;
+      geocodeAddress(geocoder, map, address)
+      // document.getElementById('submit').addEventListener('click', function() {
+      //   geocodeAddress(geocoder, map);
+      // });
     }
-  });
-}
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5UB-333Aqb-x4CWxmqShkuy91KzSRxSM&callback=initMap" async defer></script>
+
+    function geocodeAddress(geocoder, resultsMap, address) {
+      //var address = document.getElementById('address').value;
+      //address = '3654 Baldwin Hills Court South San Francisco';
+      geocoder.geocode({'address': address}, function(results, status) {
+        if (status === 'OK') {
+          resultsMap.setCenter(results[0].geometry.location);
+          var marker = new google.maps.Marker({
+            map: resultsMap,
+            position: results[0].geometry.location
+          });
+        } else {
+          alert('Geocode was not successful for the following reason: ' + status);
+        }
+      });
+    }
+
+    //forms
+    // firstName
+    var firstName = document.write('<?php echo $firstName;?>');
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5UB-333Aqb-x4CWxmqShkuy91KzSRxSM&callback=initMap" async defer></script>
 </body>
 </html>
