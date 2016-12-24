@@ -258,16 +258,16 @@ $terms = $_POST['terms'];
                 // Check if file already exists
                 if (file_exists($target_file)) {
                     if($target_file != "uploads/"){
-                        echo 'Sorry, file already exists.';
+                        echo 'Your file already exists. ';
                         $uploadOk = 0;
                     }
                     elseif(($_FILES['fileToUpload']['size'] > 5000000) && ($target_file != "uploads/")){
-                        echo 'Sorry, your file is too large.';
+                        echo 'Your file is too large. ';
                         $uploadOk = 0;
                     }
                     elseif(($imageFileType != 'jpg' && $imageFileType != 'png') && ($imageFileType != 'jpeg'
                     && $imageFileType != 'gif' && $target_file != "uploads/")){
-                        echo 'Sorry, only JPG, JPEG, PNG & GIF files are allowed.';
+                        echo 'File format is only limited to JPG, JPEG, PNG & GIF. ';
                         $uploadOk = 0;
                     }elseif($target_file == "uploads/"){
                         $uploadOk = 2;
@@ -287,7 +287,7 @@ $terms = $_POST['terms'];
                 //}
                 // Check if $uploadOk is set to 0 by an error
                 if ($uploadOk == 0) {
-                    echo 'Sorry, your file was not uploaded.';
+                    echo 'Your file was not uploaded. ';
                   // if everything is ok, try to upload file
                 } elseif($uploadOk == 2){
                   $uploadOk = 0;
@@ -296,7 +296,7 @@ $terms = $_POST['terms'];
                         echo 'The file '.basename($_FILES['fileToUpload']['name']).' has been uploaded.';
                         echo '<img src="'.$target_file.'" alt="">';
                     } else {
-                        echo 'Sorry, there was an error uploading your file.';
+                        echo 'Sorry, there was an error uploading your file. ';
                     }
                 }
                 ?>
