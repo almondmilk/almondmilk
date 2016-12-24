@@ -68,6 +68,17 @@
             <h2 style='text-align: center;'>Please verify your submission</h2>
         </div>
 
+        <div class="row">
+            <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">First Name</h5>
+            <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
+                <?php echo $firstName;?>
+                <br>
+                <script>
+                  document.write('<?php echo $firstName;?>');
+                </script>
+            </h5>
+        </div>
+
         <!-- google maps -->
         <div class="row">
             <h5 style="text-align: right;" class="col-xs-3 control-h5 style="text-align: right;"">Google Maps</h5 style="text-align: right;">
