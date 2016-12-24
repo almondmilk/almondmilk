@@ -274,7 +274,7 @@ $terms = $_POST['terms'];
                         $uploadOk = 0;
                     }elseif($target_file == "uploads/"){
                       echo '4.1';
-                        $uploadOk = 1;
+                        $uploadOk = 2;
                     }
                     $uploadOk = $uploadOk + 0;
                 }
@@ -294,7 +294,7 @@ $terms = $_POST['terms'];
                   echo'5';
                     echo 'Sorry, your file was not uploaded.';
                   // if everything is ok, try to upload file
-                } elseif($uploadOk != 0){
+                } elseif($uploadOk == 2){
                   echo '4.2';
                   $uploadOk = 0;
                 } else {
