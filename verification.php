@@ -93,9 +93,13 @@ $terms = $_POST['terms'];
           // date
           var date = "<?php echo $date;?>";
           // street
+          var street = "<?php echo $street;?>";
           // city
+          var city = "<?php echo $city;?>";
           // state
+          var state = "<?php echo $state;?>";
           // zip code
+          var zipCode = "<?php echo $zipCode;?>";
           // category
           // comment
           // terms
@@ -156,6 +160,10 @@ $terms = $_POST['terms'];
         ?>
     </div>
 
+    <div class="page-header">
+        <h4 style='text-align: left;'>Personal Information</h4>
+    </div>
+
     <!-- First Name -->
     <div class="row">
       <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">First Name</h5>
@@ -203,6 +211,18 @@ $terms = $_POST['terms'];
       </h5>
     </div>
 
+    <!-- Date -->
+    <div class="row">
+      <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">Date</h5>
+      <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
+        <script>document.write(date);</script>
+      </h5>
+    </div>
+
+    <div class="page-header">
+        <h4 style='text-align: left;'>Location</h4>
+    </div>
+
     <!-- google maps -->
     <div class="row">
       <h5 style="text-align: right;" class="col-xs-3 control-h5 style="text-align: right;"">Google Maps</h5 style="text-align: right;">
@@ -221,7 +241,7 @@ $terms = $_POST['terms'];
       });
       var geocoder = new google.maps.Geocoder();
       //var address = '3654 Baldwin Hills Court South San Francisco';
-      var address = replacedStreet + replacedCity + replacedState + replacedZipCode;
+      var address = street + city + state + zipCode;
       geocodeAddress(geocoder, map, address)
       // document.getElementById('submit').addEventListener('click', function() {
       //   geocodeAddress(geocoder, map);
