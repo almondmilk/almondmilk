@@ -183,7 +183,7 @@ $terms = $_POST['terms'];
             <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
 
               <div id="map" style="width:400px;height:400px;background:white"></div>
-            </h5 style="text-align: right;">
+            </h5>
         </div>
 
 
