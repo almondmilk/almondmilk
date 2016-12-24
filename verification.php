@@ -201,7 +201,7 @@ $terms = $_POST['terms'];
     function initMap() {
       var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 15,
-        center: {lat: -34.397, lng: 150.644}
+        center: {lat: 37.77493, lng: -122.419416}
       });
       var geocoder = new google.maps.Geocoder();
       //var address = '3654 Baldwin Hills Court South San Francisco';
