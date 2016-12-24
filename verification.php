@@ -120,55 +120,55 @@ $terms = $_POST['terms'];
 
         <!-- First Name -->
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">First Name</h5>
-          <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
+          <h5 style="text-align: right;" class="col-xs-3 control-h5">First Name</h5>
+          <h5 style="text-align: left;" class="col-xs-4 control-h5">
             <script>document.write(firstName);</script>
           </h5>
         </div>
 
         <!-- Last Name -->
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">Last Name</h5>
-          <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
+          <h5 style="text-align: right;" class="col-xs-3 control-h5">Last Name</h5>
+          <h5 style="text-align: left;" class="col-xs-4 control-h5">
             <script>document.write(lastName);</script>
           </h5>
         </div>
 
         <!-- Gender -->
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">Gender</h5>
-          <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
+          <h5 style="text-align: right;" class="col-xs-3 control-h5">Gender</h5>
+          <h5 style="text-align: left;" class="col-xs-4 control-h5">
             <script>document.write(gender);</script>
           </h5>
         </div>
         <!-- Education -->
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">Education</h5>
-          <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
+          <h5 style="text-align: right;" class="col-xs-3 control-h5">Education</h5>
+          <h5 style="text-align: left;" class="col-xs-4 control-h5">
             <script>document.write(education);</script>
           </h5>
         </div>
 
         <!-- Phone Number -->
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">Phone Number</h5>
-          <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
+          <h5 style="text-align: right;" class="col-xs-3 control-h5">Phone Number</h5>
+          <h5 style="text-align: left;" class="col-xs-4 control-h5">
             <script>document.write(phoneNumber);</script>
           </h5>
         </div>
 
         <!-- Email -->
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">Email</h5>
-          <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
+          <h5 style="text-align: right;" class="col-xs-3 control-h5">Email</h5>
+          <h5 style="text-align: left;" class="col-xs-4 control-h5">
             <script>document.write(email);</script>
           </h5>
         </div>
 
         <!-- Date -->
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">Date</h5>
-          <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
+          <h5 style="text-align: right;" class="col-xs-3 control-h5">Date</h5>
+          <h5 style="text-align: left;" class="col-xs-4 control-h5">
             <script>document.write(date);</script>
           </h5>
         </div>
@@ -179,65 +179,65 @@ $terms = $_POST['terms'];
 
         <!-- google maps -->
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">Google Maps</h5>
-            <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
+          <h5 style="text-align: right;" class="col-xs-3 control-h5">Google Maps</h5>
+            <div style="text-align: left;" class="col-xs-4 control-h5">
 
               <div id="map" style="width:400px;height:400px;background:white"></div>
-            </h5>
+            </div>
         </div>
 
 
         <!-- street -->
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">Street</h5>
-          <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
+          <h5 style="text-align: right;" class="col-xs-3 control-h5">Street</h5>
+          <h5 style="text-align: left;" class="col-xs-4 control-h5">
             <script>document.write(street);</script>
           </h5>
         </div>
 
         <!-- city -->
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">City</h5>
-          <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
+          <h5 style="text-align: right;" class="col-xs-3 control-h5">City</h5>
+          <h5 style="text-align: left;" class="col-xs-4 control-h5">
             <script>document.write(city);</script>
           </h5>
         </div>
 
         <!-- state -->
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">State</h5>
-          <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
+          <h5 style="text-align: right;" class="col-xs-3 control-h5">State</h5>
+          <h5 style="text-align: left;" class="col-xs-4 control-h5">
             <script>document.write(state);</script>
           </h5>
         </div>
 
         <!-- zip code -->
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">Zip Code</h5>
-          <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
+          <h5 style="text-align: right;" class="col-xs-3 control-h5">Zip Code</h5>
+          <h5 style="text-align: left;" class="col-xs-4 control-h5">
             <script>document.write(zipCode);</script>
           </h5>
         </div>
 
         <!-- category -->
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">Category</h5>
-          <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
+          <h5 style="text-align: right;" class="col-xs-3 control-h5">Category</h5>
+          <h5 style="text-align: left;" class="col-xs-4 control-h5">
             <script>document.write(category);</script>
           </h5>
         </div>
 
         <!-- comment -->
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">Comment</h5>
-          <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
+          <h5 style="text-align: right;" class="col-xs-3 control-h5">Comment</h5>
+          <h5 style="text-align: left;" class="col-xs-4 control-h5">
             <script>document.write(comment);</script>
           </h5>
         </div>
 
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">Uploaded Image</h5>
-          <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
+          <h5 style="text-align: right;" class="col-xs-3 control-h5">Uploaded Image</h5>
+          <h5 style="text-align: left;" class="col-xs-4 control-h5">
               <?php
               $target_dir = 'uploads/';
 
