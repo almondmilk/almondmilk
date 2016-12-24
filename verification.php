@@ -260,11 +260,11 @@ $terms = $_POST['terms'];
                     if($target_file != "uploads/"){
                         echo 'Sorry, file already exists.';
                     }
-                    else if($_FILES['fileToUpload']['size'] > 5000000 && $target_file != "uploads/"){
+                    elseif(($_FILES['fileToUpload']['size'] > 5000000) && ($target_file != "uploads/")){
                         echo 'Sorry, your file is too large.';
                     }
-                    else if($imageFileType != 'jpg' && $imageFileType != 'png' && $imageFileType != 'jpeg'
-                    && $imageFileType != 'gif' && $target_file != "uploads/"){
+                    elseif(($imageFileType != 'jpg' && $imageFileType != 'png') && ($imageFileType != 'jpeg'
+                    && $imageFileType != 'gif' && $target_file != "uploads/")){
                         echo 'Sorry, only JPG, JPEG, PNG & GIF files are allowed.';
                     }
                     $uploadOk = 0;
