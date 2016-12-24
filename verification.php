@@ -237,7 +237,7 @@ $terms = $_POST['terms'];
 
         <div class="row">
           <h5 style="text-align: right;" class="col-xs-3 control-h5">Uploaded Image</h5>
-          <h5 style="text-align: left;" class="col-xs-4 control-h5">
+          <h5 style="text-align: left;" class = "col-xs-4 control-h5">
               <?php
               $target_dir = 'uploads/';
 
