@@ -1,5 +1,12 @@
 <?php
 $firstName = $_POST['firstName'];
+$lastName = $_POST['lastName'];
+$gender = $_POST['gender'];
+$education = $_POST['education'];
+$phoneNumber = $_POST['phoneNumber'];
+$email = $_POST['email'];
+$date = $_POST['date'];
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -64,8 +71,28 @@ $firstName = $_POST['firstName'];
 <body>
   <script>
       //forms
-      // firstName
-      var firstName = "<?php echo $firstName;?>";
+          // first name
+          var firstName = "<?php echo $firstName;?>";
+          // last name
+          var lastName = "<?php echo $lastName;?>";
+          // gender
+          var gender = "<?php echo $gender;?>";
+          // education
+          var education = "<?php echo $education;?>";
+          // phone number
+          var phoneNumber = "<?php echo $phoneNumber;?>";
+          // email
+          var email = "<?php echo $email;?>";
+          // date
+          var date = "<?php echo $date;?>";
+          // street
+          // city
+          // state
+          // zip code
+          // category
+          // comment
+          // terms
+          // captcha
   </script>
   <div class="col-xs-8 col-xs-offset-2">
 
@@ -126,13 +153,15 @@ $firstName = $_POST['firstName'];
     <div class="row">
       <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">First Name</h5>
       <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
-        <?php echo $firstName;?>
-        <br>
         <script>document.write(firstName);</script>
-        <br>
-        <script>
-        document.write('<?php echo $firstName;?>');
-        </script>
+      </h5>
+    </div>
+
+    <!-- Last Name -->
+    <div class="row">
+      <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">Last Name</h5>
+      <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
+        <script>document.write(lastName);</script>
       </h5>
     </div>
 
