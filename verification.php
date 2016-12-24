@@ -79,27 +79,27 @@ $terms = $_POST['terms'];
   <script>
       //forms
           // first name
-          var firstName = "<?php echo $firstName;?>";
+          var firstName = "<?php echo $firstName; ?>";
           // last name
-          var lastName = "<?php echo $lastName;?>";
+          var lastName = "<?php echo $lastName; ?>";
           // gender
-          var gender = "<?php echo $gender;?>";
+          var gender = "<?php echo $gender; ?>";
           // education
-          var education = "<?php echo $education;?>";
+          var education = "<?php echo $education; ?>";
           // phone number
-          var phoneNumber = "<?php echo $phoneNumber;?>";
+          var phoneNumber = "<?php echo $phoneNumber; ?>";
           // email
-          var email = "<?php echo $email;?>";
+          var email = "<?php echo $email; ?>";
           // date
-          var date = "<?php echo $date;?>";
+          var date = "<?php echo $date; ?>";
           // street
-          var street = "<?php echo $street;?>";
+          var street = "<?php echo $street; ?>";
           // city
-          var city = "<?php echo $city;?>";
+          var city = "<?php echo $city; ?>";
           // state
-          var state = "<?php echo $state;?>";
+          var state = "<?php echo $state; ?>";
           // zip code
-          var zipCode = "<?php echo $zipCode;?>";
+          var zipCode = "<?php echo $zipCode; ?>";
           // category
           // comment
           // terms
@@ -160,125 +160,127 @@ $terms = $_POST['terms'];
         ?>
     </div>
 
-    <div class="page-header">
-        <h4 style='text-align: left;'>Personal Information</h4>
-    </div>
+        <div class="page-header">
+            <h4 style='text-align: left;'>Personal Information</h4>
+        </div>
 
-    <!-- First Name -->
-    <div class="row">
-      <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">First Name</h5>
-      <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
-        <script>document.write(firstName);</script>
-      </h5>
-    </div>
+        <!-- First Name -->
+        <div class="row">
+          <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">First Name</h5>
+          <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
+            <script>document.write(firstName);</script>
+          </h5>
+        </div>
 
-    <!-- Last Name -->
-    <div class="row">
-      <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">Last Name</h5>
-      <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
-        <script>document.write(lastName);</script>
-      </h5>
-    </div>
+        <!-- Last Name -->
+        <div class="row">
+          <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">Last Name</h5>
+          <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
+            <script>document.write(lastName);</script>
+          </h5>
+        </div>
 
-    <!-- Gender -->
-    <div class="row">
-      <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">Gender</h5>
-      <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
-        <script>document.write(gender);</script>
-      </h5>
-    </div>
-    <!-- Education -->
-    <div class="row">
-      <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">Education</h5>
-      <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
-        <script>document.write(education);</script>
-      </h5>
-    </div>
+        <!-- Gender -->
+        <div class="row">
+          <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">Gender</h5>
+          <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
+            <script>document.write(gender);</script>
+          </h5>
+        </div>
+        <!-- Education -->
+        <div class="row">
+          <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">Education</h5>
+          <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
+            <script>document.write(education);</script>
+          </h5>
+        </div>
 
-    <!-- Phone Number -->
-    <div class="row">
-      <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">Phone Number</h5>
-      <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
-        <script>document.write(phoneNumber);</script>
-      </h5>
-    </div>
+        <!-- Phone Number -->
+        <div class="row">
+          <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">Phone Number</h5>
+          <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
+            <script>document.write(phoneNumber);</script>
+          </h5>
+        </div>
 
-    <!-- Email -->
-    <div class="row">
-      <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">Email</h5>
-      <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
-        <script>document.write(email);</script>
-      </h5>
-    </div>
+        <!-- Email -->
+        <div class="row">
+          <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">Email</h5>
+          <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
+            <script>document.write(email);</script>
+          </h5>
+        </div>
 
-    <!-- Date -->
-    <div class="row">
-      <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">Date</h5>
-      <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
-        <script>document.write(date);</script>
-      </h5>
-    </div>
+        <!-- Date -->
+        <div class="row">
+          <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">Date</h5>
+          <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
+            <script>document.write(date);</script>
+          </h5>
+        </div>
 
-    <div class="page-header">
-        <h4 style='text-align: left;'>Location</h4>
-    </div>
+        <div class="page-header">
+            <h4 style='text-align: left;'>Location</h4>
+        </div>
 
-    <!-- google maps -->
-    <div class="row">
-      <h5 style="text-align: right;" class="col-xs-3 control-h5 style="text-align: right;"">Google Maps</h5 style="text-align: right;">
-        <h5 style="text-align: left;" class="col-xs-4 control-h5 style="text-align: right;"">
+        <!-- google maps -->
+        <div class="row">
+          <h5 style="text-align: right;" class="col-xs-3 control-h5 style="text-align: right;"">Google Maps</h5 style="text-align: right;">
+            <h5 style="text-align: left;" class="col-xs-4 control-h5 style="text-align: right;"">
 
-          <div id="map" style="width:400px;height:400px;background:white"></div>
-        </h5 style="text-align: right;">
-      </div>
-    </div>
+              <div id="map" style="width:400px;height:400px;background:white"></div>
+            </h5 style="text-align: right;">
+        </div>
 
-    <!-- street -->
-    <div class="row">
-      <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">Street</h5>
-      <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
-        <script>document.write(street);</script>
-      </h5>
-    </div>
 
-    <!-- city -->
-    <div class="row">
-      <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">City</h5>
-      <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
-        <script>document.write(city);</script>
-      </h5>
-    </div>
+        <!-- street -->
+        <div class="row">
+          <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">Street</h5>
+          <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
+            <script>document.write(street);</script>
+          </h5>
+        </div>
 
-    <!-- state -->
-    <div class="row">
-      <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">State</h5>
-      <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
-        <script>document.write(state);</script>
-      </h5>
-    </div>
+        <!-- city -->
+        <div class="row">
+          <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">City</h5>
+          <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
+            <script>document.write(city);</script>
+          </h5>
+        </div>
 
-    <!-- zip code -->
-    <div class="row">
-      <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">Zip Code</h5>
-      <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
-        <script>document.write(zipCode);</script>
-      </h5>
-    </div>
+        <!-- state -->
+        <div class="row">
+          <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">State</h5>
+          <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
+            <script>document.write(state);</script>
+          </h5>
+        </div>
 
-    <!-- category -->
-    <div class="row">
-      <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">Category</h5>
-      <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
-        <script>document.write(category);</script>
-      </h5>
-    </div>
+        <!-- zip code -->
+        <div class="row">
+          <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">Zip Code</h5>
+          <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
+            <script>document.write(zipCode);</script>
+          </h5>
+        </div>
 
-    <!-- comment -->
-    <div class="row">
-      <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">Comment</h5>
-      <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
-        <script>document.write(comment);</script>
-      </h5>
+        <!-- category -->
+        <div class="row">
+          <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">Category</h5>
+          <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
+            <script>document.write(category);</script>
+          </h5>
+        </div>
+
+        <!-- comment -->
+        <div class="row">
+          <h5 style="text-align: right;" class="col-xs-3 control-h5" style="text-align: right;">Comment</h5>
+          <h5 style="text-align: left;" class="col-xs-4 control-h5" style="text-align: right;">
+            <script>document.write(comment);</script>
+          </h5>
+        </div>
+
     </div>
 
     <script>
