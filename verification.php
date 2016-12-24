@@ -65,7 +65,7 @@ $firstName = $_POST['firstName'];
   <script>
       //forms
       // firstName
-      var firstName = document.write('<?php echo $firstName;?>');
+      var firstName = document.write('<?php $firstName;?>');
   </script>
   <div class="col-xs-8 col-xs-offset-2">
 
