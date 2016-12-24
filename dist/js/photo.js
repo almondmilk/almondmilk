@@ -41,6 +41,6 @@ $("#fileUpload").on('change', function () {
              alert("This browser does not support FileReader.");
          }
      } else {
-         alert("Pls select only images");
+         alert("Please select only images");
      }
  });
