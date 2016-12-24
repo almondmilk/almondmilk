@@ -258,18 +258,22 @@ $terms = $_POST['terms'];
                 // Check if file already exists
                 if (file_exists($target_file)) {
                     if($target_file != "uploads/"){
+                      echo '1';
                         echo 'Sorry, file already exists.';
                         $uploadOk = 0;
                     }
                     elseif(($_FILES['fileToUpload']['size'] > 5000000) && ($target_file != "uploads/")){
+                      echo '2';
                         echo 'Sorry, your file is too large.';
                         $uploadOk = 0;
                     }
                     elseif(($imageFileType != 'jpg' && $imageFileType != 'png') && ($imageFileType != 'jpeg'
                     && $imageFileType != 'gif' && $target_file != "uploads/")){
+                      echo '3';
                         echo 'Sorry, only JPG, JPEG, PNG & GIF files are allowed.';
                         $uploadOk = 0;
                     }elseif($target_file == "uploads/"){
+                      echo '4';
                         $uploadOk = 1;
                     }
                     $uploadOk = $uploadOk + 0;
@@ -287,10 +291,11 @@ $terms = $_POST['terms'];
                 //}
                 // Check if $uploadOk is set to 0 by an error
                 if ($uploadOk == 0) {
+                  echo'5';
                     echo 'Sorry, your file was not uploaded.';
                   // if everything is ok, try to upload file
                 } elseif($uploadOk == 1){
-
+                  echo '4';
                 } else {
                     if (move_uploaded_file($_FILES['fileToUpload']['tmp_name'], $target_file)) {
                         echo 'The file '.basename($_FILES['fileToUpload']['name']).' has been uploaded.';
