@@ -95,7 +95,7 @@
                         <div class="form-group">
                             <label class="col-lg-3 control-label">Phone Number *</label>
                             <div class="col-lg-5">
-                                <input type="text" class="form-control" placeholder="eg. 1234567890" name="phoneNumber" />
+                                <input type="text" class="form-control" placeholder="eg. (123)456-7890" pattern="[\d{3}[\-]\d{3}[\-]\d{4}" name="phoneNumber" />
                             </div>
                         </div>
 
@@ -574,9 +574,6 @@
                     },
                     phoneNumber: {
                         validators: {
-                            regexp: {
-                                regexp: /[\(]\d{3}[\)]\d{3}[\-]\d{4}/
-                            },
                             digits: {
                                 message: 'The phone number can contain only digits and hyphens'
                             },
