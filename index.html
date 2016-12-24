@@ -114,8 +114,7 @@
                         <div class="form-group">
                             <label class="col-lg-3 control-label">Date *</label>
                             <div class="col-lg-5">
-                                <!-- <input type="text" class="form-control" name="date" placeholder="eg. 2016/12/23" /> -->
-                                <input type="date" class="form-control" name="date" />
+                                <input type="text" class="form-control" name="date" placeholder="eg. 2016/12/23" />
                             </div>
                         </div>
 
@@ -595,6 +594,10 @@
                             date: {
                                 format: 'YYYY/MM/DD',
                                 message: 'The date is not valid'
+                            },
+                            regexp: {
+                                regexp: /^([1-9]|1[012])[\-]([1-9]|[12][0-9]|3[01])[\-]((?:19|20)\d\d)$/,
+                                message: 'ex. 12-23-2016  8-8-2016'
                             },
                             notEmpty: {
                                 message: 'The date is required and cannot be empty'
