@@ -294,8 +294,9 @@ $terms = $_POST['terms'];
                   echo'5';
                     echo 'Sorry, your file was not uploaded.';
                   // if everything is ok, try to upload file
-                } elseif($uploadOk == 1){
+                } elseif($uploadOk != 0){
                   echo '4.2';
+                  $uploadOk = 0;
                 } else {
                     if (move_uploaded_file($_FILES['fileToUpload']['tmp_name'], $target_file)) {
                         echo 'The file '.basename($_FILES['fileToUpload']['name']).' has been uploaded.';
