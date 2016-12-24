@@ -101,9 +101,12 @@ $terms = $_POST['terms'];
           // zip code
           var zipCode = "<?php echo $zipCode; ?>";
           // category
+          var category = "<?php echo $category; ?>";
           // comment
+          var comment = "<?php echo $comment; ?>";
           // terms
-          // captcha
+          var terms = "<?php echo $terms; ?>";
+
   </script>
   <div class="col-xs-8 col-xs-offset-2">
 
