@@ -120,7 +120,7 @@ $terms = $_POST['terms'];
 
         <!-- First Name -->
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5">First Name</h5>
+          <h5 style="text-align: right;" class="col-xs-3 control-h5"><b>First Name</b></h5>
           <h5 style="text-align: left;" class="col-xs-4 control-h5">
             <script>document.write(firstName);</script>
           </h5>
@@ -128,7 +128,7 @@ $terms = $_POST['terms'];
 
         <!-- Last Name -->
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5">Last Name</h5>
+          <h5 style="text-align: right;" class="col-xs-3 control-h5"><b>Last Name</b></h5>
           <h5 style="text-align: left;" class="col-xs-4 control-h5">
             <script>document.write(lastName);</script>
           </h5>
@@ -136,14 +136,14 @@ $terms = $_POST['terms'];
 
         <!-- Gender -->
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5">Gender</h5>
+          <h5 style="text-align: right;" class="col-xs-3 control-h5"><b>Gender</b></h5>
           <h5 style="text-align: left;" class="col-xs-4 control-h5">
             <script>document.write(gender);</script>
           </h5>
         </div>
         <!-- Education -->
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5">Education</h5>
+          <h5 style="text-align: right;" class="col-xs-3 control-h5"><b>Education</b></h5>
           <h5 style="text-align: left;" class="col-xs-4 control-h5">
             <script>document.write(education);</script>
           </h5>
@@ -151,7 +151,7 @@ $terms = $_POST['terms'];
 
         <!-- Phone Number -->
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5">Phone Number</h5>
+          <h5 style="text-align: right;" class="col-xs-3 control-h5"><b>Phone Number</b></h5>
           <h5 style="text-align: left;" class="col-xs-4 control-h5">
             <script>document.write(phoneNumber);</script>
           </h5>
@@ -159,7 +159,7 @@ $terms = $_POST['terms'];
 
         <!-- Email -->
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5">Email</h5>
+          <h5 style="text-align: right;" class="col-xs-3 control-h5"><b>Email</b></h5>
           <h5 style="text-align: left;" class="col-xs-4 control-h5">
             <script>document.write(email);</script>
           </h5>
@@ -167,7 +167,7 @@ $terms = $_POST['terms'];
 
         <!-- Date -->
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5">Date</h5>
+          <h5 style="text-align: right;" class="col-xs-3 control-h5"><b>Date</b></h5>
           <h5 style="text-align: left;" class="col-xs-4 control-h5">
             <script>document.write(date);</script>
           </h5>
@@ -179,7 +179,7 @@ $terms = $_POST['terms'];
 
         <!-- google maps -->
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5">Google Maps</h5>
+          <h5 style="text-align: right;" class="col-xs-3 control-h5"><b>Google Maps</b></h5>
             <div style="text-align: left;" class="col-xs-4 control-h5">
 
               <div id="map" style="width:400px;height:400px;background:white"></div>
@@ -189,7 +189,7 @@ $terms = $_POST['terms'];
 
         <!-- street -->
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5">Street</h5>
+          <h5 style="text-align: right;" class="col-xs-3 control-h5"><b>Street</b></h5>
           <h5 style="text-align: left;" class="col-xs-4 control-h5">
             <script>document.write(street);</script>
           </h5>
@@ -197,7 +197,7 @@ $terms = $_POST['terms'];
 
         <!-- city -->
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5">City</h5>
+          <h5 style="text-align: right;" class="col-xs-3 control-h5"><b>City</b></h5>
           <h5 style="text-align: left;" class="col-xs-4 control-h5">
             <script>document.write(city);</script>
           </h5>
@@ -205,7 +205,7 @@ $terms = $_POST['terms'];
 
         <!-- state -->
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5">State</h5>
+          <h5 style="text-align: right;" class="col-xs-3 control-h5"><b>State</b></h5>
           <h5 style="text-align: left;" class="col-xs-4 control-h5">
             <script>document.write(state);</script>
           </h5>
@@ -213,7 +213,7 @@ $terms = $_POST['terms'];
 
         <!-- zip code -->
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5">Zip Code</h5>
+          <h5 style="text-align: right;" class="col-xs-3 control-h5"><b>Zip Code</b></h5>
           <h5 style="text-align: left;" class="col-xs-4 control-h5">
             <script>document.write(zipCode);</script>
           </h5>
@@ -221,7 +221,7 @@ $terms = $_POST['terms'];
 
         <!-- category -->
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5">Category</h5>
+          <h5 style="text-align: right;" class="col-xs-3 control-h5"><b>Category</b></h5>
           <h5 style="text-align: left;" class="col-xs-4 control-h5">
             <script>document.write(category);</script>
           </h5>
@@ -229,14 +229,14 @@ $terms = $_POST['terms'];
 
         <!-- comment -->
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5">Comment</h5>
+          <h5 style="text-align: right;" class="col-xs-3 control-h5"><b>Comment</b></h5>
           <h5 style="text-align: left;" class="col-xs-4 control-h5">
             <script>document.write(comment);</script>
           </h5>
         </div>
 
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5">Uploaded Image</h5>
+          <h5 style="text-align: right;" class="col-xs-3 control-h5"><b>Uploaded Image</b></h5>
           <div class="col-xs-4 control-h5">
               <?php
               $target_dir = 'uploads/';
@@ -308,7 +308,7 @@ $terms = $_POST['terms'];
         </div>
 
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5">Terms and agreement</h5>
+          <h5 style="text-align: right;" class="col-xs-3 control-h5"></b>Terms and agreement</b></h5>
           <h5 style="text-align: left;" class="col-xs-4 control-h5">
             <script>document.write('Accepted');</script>
           </h5>
@@ -319,7 +319,7 @@ $terms = $_POST['terms'];
         </div>
 
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5">Captcha</h5>
+          <h5 style="text-align: right;" class="col-xs-3 control-h5"><b>Captcha</b></h5>
           <h5 style="text-align: left;" class="col-xs-4 control-h5">
             <script>document.write('Verified');</script>
           </h5>
