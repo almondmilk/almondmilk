@@ -114,7 +114,15 @@
                         <div class="form-group">
                             <label class="col-lg-3 control-label">Date *</label>
                             <div class="col-lg-5">
-                                <input type="text" class="form-control" name="date" placeholder="12-26-2016" />
+                                <script>
+                                    var hyphen = "-";
+                                    var date = new Date();
+                                    var month = date.getMonth();
+                                    var day = date.getDate();
+                                    var year = date.getFullYear();
+                                    var fullDate = month + hyphen + day + hyphen + year;
+                                </script>
+                                <input type="text" class="form-control" name="date" placeholder=<script>document.write(fullDate);</script> />
                             </div>
                         </div>
 
