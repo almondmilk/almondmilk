@@ -120,9 +120,9 @@
                                     var month = date.getMonth();
                                     var day = date.getDate();
                                     var year = date.getFullYear();
-                                    var fullDate = month + hyphen + day + hyphen + year;
+                                    document.getElementById("date").placeholder = month + hyphen + day + hyphen + year;
                                 </script>
-                                <input type="text" class="form-control" name="date" placeholder=<script>document.write(fullDate);</script> />
+                                <input type="text" class="form-control" id="date" name="date"  />
                             </div>
                         </div>
 
