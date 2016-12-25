@@ -115,72 +115,72 @@ $terms = $_POST['terms'];
     </div>
 
         <div class="page-header">
-            <h4 style='text-align: left;'>Personal Information</h4>
+            <h3 style='text-align: left;'>Personal Information</h3>
         </div>
 
         <!-- First Name -->
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5"><b>First Name</b></h5>
-          <h5 style="text-align: left;" class="col-xs-4 control-h5">
+          <h4 style="text-align: right;" class="col-xs-3 control-h4"><b>First Name</b></h4>
+          <h4 style="text-align: left;" class="col-xs-4 control-h4">
             <script>document.write(firstName);</script>
-          </h5>
+          </h4>
         </div>
 
         <!-- Last Name -->
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5"><b>Last Name</b></h5>
-          <h5 style="text-align: left;" class="col-xs-4 control-h5">
+          <h4 style="text-align: right;" class="col-xs-3 control-h4"><b>Last Name</b></h4>
+          <h4 style="text-align: left;" class="col-xs-4 control-h4">
             <script>document.write(lastName);</script>
-          </h5>
+          </h4>
         </div>
 
         <!-- Gender -->
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5"><b>Gender</b></h5>
-          <h5 style="text-align: left;" class="col-xs-4 control-h5">
+          <h4 style="text-align: right;" class="col-xs-3 control-h4"><b>Gender</b></h4>
+          <h4 style="text-align: left;" class="col-xs-4 control-h4">
             <script>document.write(gender);</script>
-          </h5>
+          </h4>
         </div>
         <!-- Education -->
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5"><b>Education</b></h5>
-          <h5 style="text-align: left;" class="col-xs-4 control-h5">
+          <h4 style="text-align: right;" class="col-xs-3 control-h4"><b>Education</b></h4>
+          <h4 style="text-align: left;" class="col-xs-4 control-h4">
             <script>document.write(education);</script>
-          </h5>
+          </h4>
         </div>
 
         <!-- Phone Number -->
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5"><b>Phone Number</b></h5>
-          <h5 style="text-align: left;" class="col-xs-4 control-h5">
+          <h4 style="text-align: right;" class="col-xs-3 control-h4"><b>Phone Number</b></h4>
+          <h4 style="text-align: left;" class="col-xs-4 control-h4">
             <script>document.write(phoneNumber);</script>
-          </h5>
+          </h4>
         </div>
 
         <!-- Email -->
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5"><b>Email</b></h5>
-          <h5 style="text-align: left;" class="col-xs-4 control-h5">
+          <h4 style="text-align: right;" class="col-xs-3 control-h4"><b>Email</b></h4>
+          <h4 style="text-align: left;" class="col-xs-4 control-h4">
             <script>document.write(email);</script>
-          </h5>
+          </h4>
         </div>
 
         <!-- Date -->
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5"><b>Date</b></h5>
-          <h5 style="text-align: left;" class="col-xs-4 control-h5">
+          <h4 style="text-align: right;" class="col-xs-3 control-h4"><b>Date</b></h4>
+          <h4 style="text-align: left;" class="col-xs-4 control-h4">
             <script>document.write(date);</script>
-          </h5>
+          </h4>
         </div>
 
         <div class="page-header">
-            <h4 style='text-align: left;'>Location</h4>
+            <h3 style='text-align: left;'>Location</h3>
         </div>
 
         <!-- google maps -->
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5"><b>Google Maps</b></h5>
-            <div style="text-align: left;" class="col-xs-4 control-h5">
+          <h4 style="text-align: right;" class="col-xs-3 control-h4"><b>Google Maps</b></h4>
+            <div style="text-align: left;" class="col-xs-4 control-h4">
 
               <div id="map" style="width:400px;height:400px;background:white"></div>
             </div>
@@ -189,55 +189,55 @@ $terms = $_POST['terms'];
 
         <!-- street -->
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5"><b>Street</b></h5>
-          <h5 style="text-align: left;" class="col-xs-4 control-h5">
+          <h4 style="text-align: right;" class="col-xs-3 control-h4"><b>Street</b></h4>
+          <h4 style="text-align: left;" class="col-xs-4 control-h4">
             <script>document.write(street);</script>
-          </h5>
+          </h4>
         </div>
 
         <!-- city -->
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5"><b>City</b></h5>
-          <h5 style="text-align: left;" class="col-xs-4 control-h5">
+          <h4 style="text-align: right;" class="col-xs-3 control-h4"><b>City</b></h4>
+          <h4 style="text-align: left;" class="col-xs-4 control-h4">
             <script>document.write(city);</script>
-          </h5>
+          </h4>
         </div>
 
         <!-- state -->
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5"><b>State</b></h5>
-          <h5 style="text-align: left;" class="col-xs-4 control-h5">
+          <h4 style="text-align: right;" class="col-xs-3 control-h4"><b>State</b></h4>
+          <h4 style="text-align: left;" class="col-xs-4 control-h4">
             <script>document.write(state);</script>
-          </h5>
+          </h4>
         </div>
 
         <!-- zip code -->
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5"><b>Zip Code</b></h5>
-          <h5 style="text-align: left;" class="col-xs-4 control-h5">
+          <h4 style="text-align: right;" class="col-xs-3 control-h4"><b>Zip Code</b></h4>
+          <h4 style="text-align: left;" class="col-xs-4 control-h4">
             <script>document.write(zipCode);</script>
-          </h5>
+          </h4>
         </div>
 
         <!-- category -->
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5"><b>Category</b></h5>
-          <h5 style="text-align: left;" class="col-xs-4 control-h5">
+          <h4 style="text-align: right;" class="col-xs-3 control-h4"><b>Category</b></h4>
+          <h4 style="text-align: left;" class="col-xs-4 control-h4">
             <script>document.write(category);</script>
-          </h5>
+          </h4>
         </div>
 
         <!-- comment -->
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5"><b>Comment</b></h5>
-          <h5 style="text-align: left;" class="col-xs-4 control-h5">
+          <h4 style="text-align: right;" class="col-xs-3 control-h4"><b>Comment</b></h4>
+          <h4 style="text-align: left;" class="col-xs-4 control-h4">
             <script>document.write(comment);</script>
-          </h5>
+          </h4>
         </div>
 
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5"><b>Uploaded Image</b></h5>
-          <div class="col-xs-4 control-h5">
+          <h4 style="text-align: right;" class="col-xs-3 control-h4"><b>Uploaded Image</b></h4>
+          <div class="col-xs-4 control-h4">
               <?php
               $target_dir = 'uploads/';
 
@@ -304,25 +304,25 @@ $terms = $_POST['terms'];
         </div>
 
         <div class="page-header">
-            <h4 style='text-align: left;'>Terms and agreement</h4>
+            <h3 style='text-align: left;'>Terms and agreement</h3>
         </div>
 
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5"></b>Terms and agreement</b></h5>
-          <h5 style="text-align: left;" class="col-xs-4 control-h5">
+          <h4 style="text-align: right;" class="col-xs-3 control-h4"></b>Terms and agreement</b></h4>
+          <h4 style="text-align: left;" class="col-xs-4 control-h4">
             <script>document.write('Accepted');</script>
-          </h5>
+          </h4>
         </div>
 
         <div class="page-header">
-            <h4 style='text-align: left;'>Captcha</h4>
+            <h3 style='text-align: left;'>Captcha</h3>
         </div>
 
         <div class="row">
-          <h5 style="text-align: right;" class="col-xs-3 control-h5"><b>Captcha</b></h5>
-          <h5 style="text-align: left;" class="col-xs-4 control-h5">
+          <h4 style="text-align: right;" class="col-xs-3 control-h4"><b>Captcha</b></h4>
+          <h4 style="text-align: left;" class="col-xs-4 control-h4">
             <script>document.write('Verified');</script>
-          </h5>
+          </h4>
         </div>
 
     </div>
