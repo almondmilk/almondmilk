@@ -49,7 +49,7 @@
                     </div>
 
                     <div>
-                          <h5 style='text-align: left; color: red;'><b>* indicates required field</b></h5>
+                          <h4 style='text-align: left; color: red;'><b>* indicates required field</b></h4>
                     </div>
                     <!--<form id="defaultForm" method="GET" class="form-horizontal" action="target.php">-->
                     <form id="defaultForm" method="post" class="form-horizontal" action="verification.php" enctype="multipart/form-data">
@@ -57,12 +57,12 @@
 
 
                         <div class="page-header">
-                            <h4 style='text-align: left;'>Personal Information</h4>
+                            <h3 style='text-align: left;'>Personal Information</h3>
                         </div>
 
                         <!-- first and last name -->
                         <div class="form-group">
-                            <h5 class="col-lg-3 control-label"><b>Full name *</b></h5>
+                            <h4 class="col-lg-3 control-label"><b>Full name *</b></h4>
                             <div class="col-lg-4">
                                 <input type="text" class="form-control" name="firstName" placeholder="First name" />
                             </div>
@@ -73,7 +73,7 @@
 
                         <!-- gender -->
                         <div class="form-group">
-                            <h5 class="col-lg-3 control-label"><b>Gender</b></h5>
+                            <h4 class="col-lg-3 control-label"><b>Gender</b></h4>
                             <div class="col-lg-5">
                                 <select class="form-control" name="gender">
                                       <option value="">Select your gender</option>
@@ -86,7 +86,7 @@
 
                         <!-- highest education -->
                         <div class="form-group">
-                            <h5 class="col-lg-3 control-label"><b>Highest Education</b></h5>
+                            <h4 class="col-lg-3 control-label"><b>Highest Education</b></h4>
                             <div class="col-lg-5">
                                 <select class="form-control" name="education">
                                     <option value="">Select your highest education</option>
@@ -100,7 +100,7 @@
 
                         <!-- phone -->
                         <div class="form-group">
-                            <h5 class="col-lg-3 control-label"><b>Phone Number *</b></h5>
+                            <h4 class="col-lg-3 control-label"><b>Phone Number *</b></h4>
                             <div class="col-lg-5">
                                 <!-- [\(]\d{3}[\)]\d{3}[\-]\d{4} -->
                                 <!-- ^d{3}[\-]\d{3}[\-]\d{4}$ -->
@@ -111,7 +111,7 @@
 
                         <!-- email -->
                         <div class="form-group">
-                            <h5 class="col-lg-3 control-label"><b>Email address *</b></h5>
+                            <h4 class="col-lg-3 control-label"><b>Email address *</b></h4>
                             <div class="col-lg-5">
                                 <input type="text" class="form-control" placeholder="example@example.com" name="email" />
                             </div>
@@ -119,7 +119,7 @@
 
                         <!-- date -->
                         <div class="form-group">
-                            <h5 class="col-lg-3 control-label"><b>Date *</b></h5>
+                            <h4 class="col-lg-3 control-label"><b>Date *</b></h4>
                             <div class="col-lg-5">
                                 <input type="text" class="form-control" id="date" name="date" />
                                 <script>
@@ -161,25 +161,25 @@
 
                         <!-- location -->
                         <div class="page-header">
-                            <h4 style='text-align: left;'>Location</h4>
+                            <h3 style='text-align: left;'>Location</h3>
                         </div>
 
                         <div class="form-group">
-                            <h5 class="col-lg-3 control-label"><b>Street *</b></h5>
+                            <h4 class="col-lg-3 control-label"><b>Street *</b></h4>
                             <div class="col-lg-5">
                                 <input type="text" class="form-control" placeholder="1234 Main Street"name="street" />
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <h5 class="col-lg-3 control-label"><b>City *</b></h5>
+                            <h4 class="col-lg-3 control-label"><b>City *</b></h4>
                             <div class="col-lg-5">
                                 <input type="text" class="form-control" placeholder="San Francisco" name="city" />
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <h5 class="col-lg-3 control-label"><b>State *</b></h5>
+                            <h4 class="col-lg-3 control-label"><b>State *</b></h4>
                             <div class="col-lg-5">
                                 <select name="state" class="form-control">
                                     <option value="">Select a state</option>
@@ -239,7 +239,7 @@
                         </div>
 
                         <div class="form-group">
-                            <h5 class="col-lg-3 control-label"><b>Zip Code *</b></h5>
+                            <h4 class="col-lg-3 control-label"><b>Zip Code *</b></h4>
                             <div class="col-lg-3">
                                 <input type="text" class="form-control" placeholder="12345" name="zipCode" />
                             </div>
@@ -247,7 +247,7 @@
 
                         <!-- category -->
                         <div class="form-group">
-                            <h5 class="col-lg-3 control-label"><b>Category *</b></h5>
+                            <h4 class="col-lg-3 control-label"><b>Category *</b></h4>
                             <div class="col-lg-5">
                                 <select class="form-control" name="category">
                                     <option value="">Select a category</option>
@@ -261,7 +261,7 @@
                         </div>
 
                         <div class="form-group">
-                            <h5 class="col-lg-3 control-label"><b>Comment</b></h5>
+                            <h4 class="col-lg-3 control-label"><b>Comment</b></h4>
                             <div class="col-lg-5">
                                 <textarea class="form-control" name="comment" placeholder="200 characters max." rows="10" data-bv-stringlength data-bv-stringlength-max="200" data-bv-stringlength-message="The comment must be less than 200 characters long"></textarea>
                             </div>
@@ -269,7 +269,7 @@
 
                         <!-- image upload -->
                         <div class="form-group">
-                            <h5 class="col-lg-3 control-label"><b>Upload Image</b></h5>
+                            <h4 class="col-lg-3 control-label"><b>Upload Image</b></h4>
                             <div id="wrapper" class="col-lg-5">
                                 <input id="fileUpload" type="file" class="btn btn-default" name="fileToUpload" multiple />
                                 <h6>One image only and maximum file size is 5mb</h6>
@@ -278,12 +278,12 @@
                         </div>
 
                         <div class="page-header">
-                            <h4 style='text-align: left;'>Terms and Agreement</h4>
+                            <h3 style='text-align: left;'>Terms and Agreement</h3>
                         </div>
 
                         <!-- terms -->
                         <div class="form-group">
-                            <h5 class="col-lg-3 control-label"><b>Terms *<b>/</h5>
+                            <h4 class="col-lg-3 control-label"><b>Terms *<b>/</h4>
                             <div class="col-lg-5">
                                 <div class="checkbox">
                                     <input type="checkbox" name="terms" /> Accept the terms and policies
@@ -293,8 +293,8 @@
 
                         <!-- catpcha -->
                         <div class="form-group">
-                            <!-- <h5 class="col-lg-3 control-label">Captcha *</h5> -->
-                            <h5 class="col-lg-3 control-label"><b>Captcha *</b></h5>
+                            <!-- <h4 class="col-lg-3 control-label">Captcha *</h4> -->
+                            <h4 class="col-lg-3 control-label"><b>Captcha *</b></h4>
                             <div class="col-lg-5">
                                 <script>
                                     var randNum = Math.floor(Math.random() * ((11 + 1) - 2)) + 2;
