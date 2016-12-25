@@ -43,12 +43,17 @@
             <!-- form: -->
             <section>
                 <div class="col-lg-8 col-lg-offset-2">
+
                     <div class="page-header">
                         <h2 style='text-align: center;'>Please record the problem by filing the form below</h2>
                     </div>
 
                     <!--<form id="defaultForm" method="GET" class="form-horizontal" action="target.php">-->
                     <form id="defaultForm" method="post" class="form-horizontal" action="verification.php" enctype="multipart/form-data">
+
+                      <div class="col-lg-3 control-label">
+                            <h4 style='text-align: left;'>* indicates required field</h4>
+                      </div>
                         <div class="page-header">
                             <h4 style='text-align: left;'>Personal Information</h4>
                         </div>
@@ -287,7 +292,7 @@
                         <!-- catpcha -->
                         <div class="form-group">
                             <!-- <h5 class="col-lg-3 control-label">Captcha *</h5> -->
-                            <h5 class="col-lg-3 control-label"><b>Captcha *</b></h5>
+                            <h5 class="col-lg-3 control-label">Captcha *</h5>
                             <div class="col-lg-5">
                                 <script>
                                     var randNum = Math.floor(Math.random() * ((11 + 1) - 2)) + 2;
