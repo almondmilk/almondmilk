@@ -257,19 +257,17 @@ $terms = $_POST['terms'];
                 }
                 // Check if file already exists
                 if (file_exists($target_file)) {
-                    if($target_file != "uploads/"){
+                    if ($target_file != 'uploads/') {
                         echo 'Your file already exists. ';
                         $uploadOk = 0;
-                    }
-                    elseif(($_FILES['fileToUpload']['size'] > 5000000) && ($target_file != "uploads/")){
+                    } elseif (($_FILES['fileToUpload']['size'] > 5000000) && ($target_file != 'uploads/')) {
                         echo 'Your file is too large. ';
                         $uploadOk = 0;
-                    }
-                    elseif(($imageFileType != 'jpg' && $imageFileType != 'png') && ($imageFileType != 'jpeg'
-                    && $imageFileType != 'gif' && $target_file != "uploads/")){
+                    } elseif (($imageFileType != 'jpg' && $imageFileType != 'png') && ($imageFileType != 'jpeg'
+                    && $imageFileType != 'gif' && $target_file != 'uploads/')) {
                         echo 'File format is only limited to JPG, JPEG, PNG & GIF. ';
                         $uploadOk = 0;
-                    }elseif($target_file == "uploads/"){
+                    } elseif ($target_file == 'uploads/') {
                         $uploadOk = 2;
                     }
                     $uploadOk = $uploadOk + 0;
@@ -289,8 +287,8 @@ $terms = $_POST['terms'];
                 if ($uploadOk == 0) {
                     echo 'Your file was not uploaded. ';
                   // if everything is ok, try to upload file
-                } elseif($uploadOk == 2){
-                  $uploadOk = 0;
+                } elseif ($uploadOk == 2) {
+                    $uploadOk = 0;
                 } else {
                     if (move_uploaded_file($_FILES['fileToUpload']['tmp_name'], $target_file)) {
                         echo 'The file '.basename($_FILES['fileToUpload']['name']).' has been uploaded.';
@@ -308,7 +306,7 @@ $terms = $_POST['terms'];
         </div>
 
         <div class="row">
-          <h4 style="text-align: right;" class="col-xs-3 control-h4"></b>Terms and agreement</b></h4>
+          <h4 style="text-align: right;" class="col-xs-3 control-h4"><b>Terms and agreement</b></h4>
           <h4 style="text-align: left;" class="col-xs-4 control-h4">
             <script>document.write('Accepted');</script>
           </h4>
