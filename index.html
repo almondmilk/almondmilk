@@ -68,7 +68,7 @@
                         <div class="form-group">
                             <label class="col-lg-3 control-label">Gender</label>
                             <div class="col-lg-5">
-                                  <select class="form-control" name="gender">
+                                <select class="form-control" name="gender">
                                       <option value="">Select your gender</option>
                                       <option value="Male">Male</option>
                                       <option value="Female">Female</option>
@@ -95,9 +95,9 @@
                         <div class="form-group">
                             <label class="col-lg-3 control-label">Phone Number *</label>
                             <div class="col-lg-5">
-                              <!-- [\(]\d{3}[\)]\d{3}[\-]\d{4} -->
-                              <!-- ^d{3}[\-]\d{3}[\-]\d{4}$ -->
-                              <!-- pattern="^[\(]\d{3}[\)]\d{3}[\-]\d{4}$" -->
+                                <!-- [\(]\d{3}[\)]\d{3}[\-]\d{4} -->
+                                <!-- ^d{3}[\-]\d{3}[\-]\d{4}$ -->
+                                <!-- pattern="^[\(]\d{3}[\)]\d{3}[\-]\d{4}$" -->
                                 <input type="text" class="form-control" placeholder="123-456-7890" data-bv-stringlength data-bv-stringlength-max="12" data-bv-stringlength-message="A standard U.S.A. phone number does not contain this many digits" name="phoneNumber" />
                             </div>
                         </div>
@@ -106,7 +106,7 @@
                         <div class="form-group">
                             <label class="col-lg-3 control-label">Email address *</label>
                             <div class="col-lg-5">
-                                <input type="text" class="form-control" name="email" />
+                                <input type="text" class="form-control" placeholder="example@example.com" name="email" />
                             </div>
                         </div>
 
@@ -114,40 +114,40 @@
                         <div class="form-group">
                             <label class="col-lg-3 control-label">Date *</label>
                             <div class="col-lg-5">
-                                <input type="text" class="form-control" id="date" name="date"  />
+                                <input type="text" class="form-control" id="date" name="date" />
                                 <script>
                                     var hyphen = "-";
                                     var date = new Date();
                                     var month = date.getMonth();
-                                    if(month == 0){
+                                    if (month == 0) {
                                         month = 1;
-                                    }else if(month == 1){
+                                    } else if (month == 1) {
                                         month = 2;
-                                    }else if(month == 2){
+                                    } else if (month == 2) {
                                         month = 3;
-                                    }else if(month == 3){
+                                    } else if (month == 3) {
                                         month = 4;
-                                    }else if(month == 4){
+                                    } else if (month == 4) {
                                         month = 5;
-                                    }else if(month == 5){
+                                    } else if (month == 5) {
                                         month = 6;
-                                    }else if(month == 6){
+                                    } else if (month == 6) {
                                         month = 7;
-                                    }else if(month == 7){
+                                    } else if (month == 7) {
                                         month = 8;
-                                    }else if(month == 8){
+                                    } else if (month == 8) {
                                         month = 9;
-                                    }else if(month == 9){
+                                    } else if (month == 9) {
                                         month = 10;
-                                    }else if(month == 10){
+                                    } else if (month == 10) {
                                         month = 11;
-                                    }else if(month == 11){
+                                    } else if (month == 11) {
                                         month = 12;
                                     }
                                     var day = date.getDate();
                                     var year = date.getFullYear();
                                     var fullDate = month + hyphen + day + hyphen + year;
-                                    document.getElementById("date").placeholder  = fullDate;
+                                    document.getElementById("date").placeholder = fullDate;
                                 </script>
                             </div>
                         </div>
@@ -261,7 +261,7 @@
                         </div>
 
                         <!-- image upload -->
-                         <div class="form-group">
+                        <div class="form-group">
                             <label class="col-lg-3 control-label">Upload Image(s)</label>
                             <div id="wrapper" class="col-lg-5">
                                 <input id="fileUpload" type="file" class="btn btn-default" name="fileToUpload" multiple />
