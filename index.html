@@ -49,7 +49,7 @@
                     </div>
 
                     <div>
-                        <h4 style='text-align: left;'><b><b style='color: red;'>*</b>indicates required field</b></h4>
+                        <h4 style='text-align: left;'><b><b style='color: red;'>*</b> indicates required field</b></h4>
                     </div>
                     <!--<form id="defaultForm" method="GET" class="form-horizontal" action="target.php">-->
                     <form id="defaultForm" method="post" class="form-horizontal" action="verification.php" enctype="multipart/form-data">
@@ -62,7 +62,7 @@
 
                         <!-- first and last name -->
                         <div class="form-group">
-                            <h4 class="col-lg-3 control-label"><b>Full name *</b></h4>
+                            <h4 class="col-lg-3 control-label"><b>Full name <b style='color: red;'>*</b></b></h4>
                             <div class="col-lg-4">
                                 <input type="text" class="form-control" name="firstName" placeholder="First name" />
                             </div>
@@ -100,7 +100,7 @@
 
                         <!-- phone -->
                         <div class="form-group">
-                            <h4 class="col-lg-3 control-label"><b>Phone Number *</b></h4>
+                            <h4 class="col-lg-3 control-label"><b>Phone Number <b style='color: red;'>*</b></b></h4>
                             <div class="col-lg-5">
                                 <!-- [\(]\d{3}[\)]\d{3}[\-]\d{4} -->
                                 <!-- ^d{3}[\-]\d{3}[\-]\d{4}$ -->
@@ -111,7 +111,7 @@
 
                         <!-- email -->
                         <div class="form-group">
-                            <h4 class="col-lg-3 control-label"><b>Email address *</b></h4>
+                            <h4 class="col-lg-3 control-label"><b>Email address <b style='color: red;'>*</b></b></h4>
                             <div class="col-lg-5">
                                 <input type="text" class="form-control" placeholder="example@example.com" name="email" />
                             </div>
@@ -119,7 +119,7 @@
 
                         <!-- date -->
                         <div class="form-group">
-                            <h4 class="col-lg-3 control-label"><b>Date *</b></h4>
+                            <h4 class="col-lg-3 control-label"><b>Date <b style='color: red;'>*</b></b></h4>
                             <div class="col-lg-5">
                                 <input type="text" class="form-control" id="date" name="date" />
                                 <script>
@@ -165,21 +165,21 @@
                         </div>
 
                         <div class="form-group">
-                            <h4 class="col-lg-3 control-label"><b>Street *</b></h4>
+                            <h4 class="col-lg-3 control-label"><b>Street <b style='color: red;'>*</b></b></h4>
                             <div class="col-lg-5">
                                 <input type="text" class="form-control" placeholder="1600 Holloway Ave." name="street" />
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <h4 class="col-lg-3 control-label"><b>City *</b></h4>
+                            <h4 class="col-lg-3 control-label"><b>City <b style='color: red;'>*</b></b></h4>
                             <div class="col-lg-5">
                                 <input type="text" class="form-control" placeholder="San Francisco" name="city" />
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <h4 class="col-lg-3 control-label"><b>State *</b></h4>
+                            <h4 class="col-lg-3 control-label"><b>State <b style='color: red;'>*</b></b></h4>
                             <div class="col-lg-5">
                                 <select name="state" class="form-control">
                                     <option value="">Select a state</option>
@@ -239,7 +239,7 @@
                         </div>
 
                         <div class="form-group">
-                            <h4 class="col-lg-3 control-label"><b>Zip Code *</b></h4>
+                            <h4 class="col-lg-3 control-label"><b>Zip Code <b style='color: red;'>*</b></b></h4>
                             <div class="col-lg-3">
                                 <input type="text" class="form-control" placeholder="94132" name="zipCode" />
                             </div>
@@ -247,7 +247,7 @@
 
                         <!-- category -->
                         <div class="form-group">
-                            <h4 class="col-lg-3 control-label"><b>Category *</b></h4>
+                            <h4 class="col-lg-3 control-label"><b>Category <b style='color: red;'>*</b></b></h4>
                             <div class="col-lg-5">
                                 <select class="form-control" name="category">
                                     <option value="">Select a category</option>
@@ -283,7 +283,7 @@
 
                         <!-- terms -->
                         <div class="form-group">
-                            <h4 class="col-lg-3 control-label"><b>Terms *</b></h4>
+                            <h4 class="col-lg-3 control-label"><b>Terms <b style='color: red;'>*</b></b></h4>
                             <div class="col-lg-5">
                                 <div class="checkbox">
                                     <input type="checkbox" name="terms" /> Accept the terms and policies
@@ -294,7 +294,7 @@
                         <!-- catpcha -->
                         <div class="form-group">
                             <!-- <h4 class="col-lg-3 control-label">Captcha *</h4> -->
-                            <h4 class="col-lg-3 control-label"><b>Captcha *</b></h4>
+                            <h4 class="col-lg-3 control-label"><b>Captcha <b style='color: red;'>*</b></b></h4>
                             <div class="col-lg-5">
                                 <script>
                                     var randNum = Math.floor(Math.random() * ((11 + 1) - 2)) + 2;
