@@ -3,6 +3,7 @@ http://codepedia.info/html5-filereader-preview-image-show-thumbnail-image-before
 http://bv.doc.javake.cn/getting-started/#download
 http://stackoverflow.com/questions/14069421/show-an-image-preview-before-upload
 http://twitterbootstrap.org/bootstrap-form-validation/
+https://media.termsfeed.com/pdf/terms-and-conditions-template.pdf
 
 # BootstrapValidator - [v0.4.5](https://github.com/nghuuphuoc/bootstrapvalidator/releases/download/v0.4.5/bootstrapvalidator-dist-0.4.5.zip)
 
