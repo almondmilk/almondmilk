@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SFSU CS Department - CSC 642 Fall 2016 project: Form UI Alvin Lu alvinlu@mail.sfsu.edu</title>
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="..dist/css/bootstrapValidator.css" />
+
+    <!-- Include the FontAwesome CSS if you want to use feedback icons provided by FontAwesome -->
+    <!--<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />-->
+    <link class="jsbin" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js" rel="stylesheet" type="text/css" />
+    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../vendor/jquery/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../dist/js/bootstrapValidator.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+
+            <section>
+                <div class="col-lg-8 col-lg-offset-2">
+                    <script>
+                        var today = new Date();
+                        var dd = today.getDate();
+                        var mm = today.getMonth() + 1; //January is 0!
+                        var yyyy = today.getFullYear();
+
+                        if (dd < 10) {
+                            dd = '0' + dd
+                        }
+
+                        if (mm < 10) {
+                            mm = '0' + mm
+                        }
+
+                        today = mm + '/' + dd + '/' + yyyy;
+                    </script>
+                    <div class="page-header">
+                        <h2 style='text-align: center;'>Terms and Agreement</h2>
+                    </div>
+
+                    <div class="form-group">
+                        <h4><b>Last Updated On <script>document.write(today);</script></b></h4>
+                        <h5>Please read these Terms and Agreement carefully before using
+                      the http://almondmilk.club website operated by Alvin Lu</h5>
+                        <!-- <br> -->
+                        <h5>Your access to and use of the Service is conditioned on your acceptance of and compliance with
+                        these Terms. These Terms apply to all visitors, users and others who access or use the Service</h5>
+                        <!-- <br> -->
+                        <h5><b>By accessing or using the Service you agree to be bound by these Terms. If you disagree
+                        with any part of the terms then you may not access the Service</b></h5>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
