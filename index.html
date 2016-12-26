@@ -551,7 +551,7 @@
                             //     max: 5,
                             // },
                             notEmpty: {
-                                message: 'The captcha is required and cannot be empty'
+                                message: 'Captcha is required'
                             },
                             regexp: {
                                 regexp: /^[R]+[4]+[8]+[E]+[K]$/,
@@ -580,7 +580,7 @@
                     terms: {
                         validators: {
                             notEmpty: {
-                                message: 'You have to accept the terms and policies'
+                                message: 'You have to accept the terms and policies in order to proceed'
                             }
                         }
                     },
@@ -623,7 +623,7 @@
                             // },
                             regexp: {
                                 regexp: /(^\d{3}[\-]\d{3}[\-]\d{4}$)|(^\d{3}$)/,
-                                message: 'Numbers and parenthesis only'
+                                message: 'Numbers and dashes only'
                             },
                             notEmpty: {
                                 message: 'The phone number is required and cannot be empty'
